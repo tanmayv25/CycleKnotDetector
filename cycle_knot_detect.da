@@ -1,0 +1,37 @@
+import sys
+import graph_config
+
+
+class P(process):
+    def setup(ps:set, successors:set, own_id:int):
+        self.mode = 'sleep'
+        self.status = 'undefined'
+        self.num_suc = 0
+
+    def initiate():
+        if own_id == 0:
+            send(('broadcast', own_id), to=successors)
+
+    
+    def receive(msg=('broadcast', id)):
+        if self.mode == 'sleep':
+            output(own_id + 1 , ' received signal from ', id + 1)
+            send(('broadcast', own_id), to=successors)
+            self.mode = 'awake'
+        else:
+           send(('Terminate',), to=self)
+
+    def run():
+        initiate()
+        output('YO from ', self)
+        await(received(('Terminate',)))
+        output("Done! from ", self)
+
+def main():
+    n = graph_config.network1['total_nodes']
+    config(channel="fifo")
+    ps = list(new(P, num= n))
+    for i, p in enumerate(ps):
+        successors = [ps[i - 1] for i in graph_config.network1['node'+str(i+1)]]
+        setup({p}, (ps, successors,i))
+    start(ps)
