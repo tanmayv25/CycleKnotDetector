@@ -67,19 +67,33 @@ class P(process):
             this_S[sender] = set_union(this_S[sender], S)
             status = type_exor(status, type)
             if num_suc == 0:
+                # FLAG: Obtaining the union. Need to verify if the Sij was a typo \
+                # Considering it a typo as for now.
+                new_set = []
+                for set_1j in this_S:
+                    new_set = set_union(new_set, set_1j)
+
                 # Verify the manner of termination here \
                 # Currently implementing by sending a signal \
-                # to self.
-                if status == 'cycle_only':
-                    
-                send(('Terminate'), to=self)
-            
+                # to self
 
-    def receive(msg=('broadcast', sender))
+                unmarked_elements = [i for i in new_set if i > 0]
+                if status == 'cycle_only':
+                    result = 'cycle'
+                elif status == 'cycle' && not new_set:
+                    result == 'cycle'
+                elif status == 'cycle' && not unmarked_elements:
+                    result = 'knot'
+                output('I am in a ', result)
+                send(('Terminate'), to=self)
+        else:
+            # TODO: Add the non-initiator response
+
 
     def run():
         initiate()
-
+        await(received(('Terminate')))
+        output('Done!!!')
 
 def main():
     n = graph_config.network1['total_nodes']
