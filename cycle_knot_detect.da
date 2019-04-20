@@ -3,35 +3,90 @@ import graph_config
 
 
 class P(process):
-    def setup(ps:set, successors:set, own_id:int):
+    def setup(successors:set, own_id:int):
         self.mode = 'sleep'
         self.status = 'undefined'
         self.num_suc = 0
+        self.has_sent_cycle_message = False
+        self.this_S = {}
+        self.result = 'unknown'
 
     def initiate():
-        if own_id == 0:
-            send(('broadcast', own_id), to=successors)
+        if own_id == 1:
+            mode = 'awake'
+            num_suc = len(successors)
+            # Should we send the process reference or own_id
+            send(('Request', self), to=successors)
 
     
-    def receive(msg=('broadcast', id)):
-        if self.mode == 'sleep':
-            output(own_id + 1 , ' received signal from ', id + 1)
-            send(('broadcast', own_id), to=successors)
-            self.mode = 'awake'
+    def receive(msg=('Request', sender)):
+        # Utility function to obtain the marked values
+        def bar(i):
+            return -1 * i
+
+
+        if own_id == 1:
+            if has_sent_cycle_message:
+                S = [bar[str(own_id)]]
+            else:
+                S = []
+            # Should we send the process reference or own_id
+            send(('Reply', 'cycle', self, S), to=sender)
+            has_sent_cycle_message = True
         else:
-           send(('Terminate',), to=self)
+            # TODO: Add Non-initiator response here
+
+    def receive(msg=('Reply', type, sender, S)):
+        # Utility function to merge the two sets
+        def set_union(S1, S2):
+            new_set = S1.union(S2)
+            # Annhilate the corresponding values \
+            # of the negative values if present
+            for i in new_set:
+                if i < 0:
+                    if (-1 * i) in new_set:
+                        new_set = new_set.remove(-1 * i)
+            return new_set
+
+        def type_exor(type1, type2):
+            if (type2 == 'cycle_only') \
+                || (type1 == 'cycle' && type2 == 'leaf') \
+                || (type1 == 'leaf' && type2 == 'cycle'):
+                return 'cycle_only'
+            elif (type1 == 'cycle' && type2 == 'incomplete_search') \
+                || (type2 == 'cycle' && type1 == 'incomplete_search'):
+                return 'cycle'
+            elif (type1 == 'leaf' && type2 == 'incomplete_search') \
+                || (type2 == 'leaf' && type1 == 'incomplete_search'):
+                return 'leaf'
+            else:
+                output("Shouldn't come here!!!")
+                
+        if own_id == 1:
+            num_suc -= 1
+            this_S[sender] = set_union(this_S[sender], S)
+            status = type_exor(status, type)
+            if num_suc == 0:
+                # Verify the manner of termination here \
+                # Currently implementing by sending a signal \
+                # to self.
+                if status == 'cycle_only':
+                    
+                send(('Terminate'), to=self)
+            
+
+    def receive(msg=('broadcast', sender))
 
     def run():
         initiate()
-        output('YO from ', self)
-        await(received(('Terminate',)))
-        output("Done! from ", self)
+
 
 def main():
     n = graph_config.network1['total_nodes']
     config(channel="fifo")
     ps = list(new(P, num= n))
+
     for i, p in enumerate(ps):
         successors = [ps[i - 1] for i in graph_config.network1['node'+str(i+1)]]
-        setup({p}, (ps, successors,i))
+        setup({p}, (successors,i+1))
     start(ps)
