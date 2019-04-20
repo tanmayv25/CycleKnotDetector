@@ -12,7 +12,7 @@ class P(process):
         self.earlier_reply_sent=''
         self.this_S = {}
         self.result = 'unknown'
-        self.parent=null
+        self.parent=self
         self.replies_received={'cycle':0,'cycle_only':0,'incomplete_search':0,'leaf':0}
 
     def initiate():
@@ -71,14 +71,14 @@ class P(process):
 
         def type_exor(type1, type2):
             if (type2 == 'cycle_only') \
-                || (type1 == 'cycle' && type2 == 'leaf') \
-                || (type1 == 'leaf' && type2 == 'cycle'):
+                or (type1 == 'cycle' and type2 == 'leaf') \
+                or (type1 == 'leaf' and type2 == 'cycle'):
                 return 'cycle_only'
-            elif (type1 == 'cycle' && type2 == 'incomplete_search') \
-                || (type2 == 'cycle' && type1 == 'incomplete_search'):
+            elif (type1 == 'cycle' and type2 == 'incomplete_search') \
+                or (type2 == 'cycle' and type1 == 'incomplete_search'):
                 return 'cycle'
-            elif (type1 == 'leaf' && type2 == 'incomplete_search') \
-                || (type2 == 'leaf' && type1 == 'incomplete_search'):
+            elif (type1 == 'leaf' and type2 == 'incomplete_search') \
+                or (type2 == 'leaf' and type1 == 'incomplete_search'):
                 return 'leaf'
             else:
                 output("Shouldn't come here!!!")
@@ -101,9 +101,9 @@ class P(process):
                 unmarked_elements = [i for i in new_set if i > 0]
                 if status == 'cycle_only':
                     result = 'cycle'
-                elif status == 'cycle' && not new_set:
+                elif status == 'cycle' and not new_set:
                     result == 'cycle'
-                elif status == 'cycle' && not unmarked_elements:
+                elif status == 'cycle' and not unmarked_elements:
                     result = 'knot'
                 output('I am in a ', result)
                 send(('Terminate'), to=self)
@@ -129,14 +129,15 @@ class P(process):
                 if status == 'cycle_only':
                     send(('Reply', 'cycle_only', self, []), to=parent)
                 if status =='cycle':
-                    if  replies_received['cycle']==1 and replies_received['cycle_only']==0 and replies_received['incomplete_search']==0
+                    if  replies_received['cycle']==1 and replies_received['cycle_only']==0 and replies_received['incomplete_search']==0 \
                     and replies_received['leaf']==0:
                         send(('Reply', 'cycle', self, new_set), to=parent)
                     elif not unmarked_elements:
                         send(('Reply', 'cycle_only', self, new_set), to=parent)
                     else:
                         send(('Reply', 'cycle', self, new_set), to=parent)
-              send(('Terminate'), to=self)
+
+                send(('Terminate'), to=self)
 
 
     def run():

@@ -33,3 +33,30 @@
 [2019-04-19 20:53:41,664] leader_election_example.P<P:e9c09>:OUTPUT: Leader is <P:e9c0b>
 [2019-04-19 20:53:41,665] leader_election_example.P<P:e9c0b>:OUTPUT: Done! from  <P:e9c0b>
 [2019-04-19 20:53:41,666] leader_election_example.P<P:e9c0b>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-20 02:21:50,834] da.api<MainProcess>:INFO: <Node_:86001> initialized at 127.0.0.1:(UdpTransport=35544, TcpTransport=27094).
+[2019-04-20 02:21:50,835] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 02:21:50,835] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 02:21:50,836] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 02:21:50,935] cycle_knot_detect.P<P:ce005>:ERROR: Exception during setup((126100844880855042, ([<P:ce003>], 1))): NameError("name 'null' is not defined",)
+[2019-04-20 02:21:50,938] cycle_knot_detect.P<P:ce003>:ERROR: Exception during setup((126100844880855043, ([<P:ce002>, <P:ce004>], 2))): NameError("name 'null' is not defined",)
+[2019-04-20 02:21:50,940] cycle_knot_detect.P<P:ce002>:ERROR: Exception during setup((126100844880855044, ([], 3))): NameError("name 'null' is not defined",)
+[2019-04-20 02:21:50,943] cycle_knot_detect.P<P:ce004>:ERROR: Exception during setup((126100844880855045, ([<P:ce005>], 4))): NameError("name 'null' is not defined",)
+[2019-04-20 02:21:50,945] cycle_knot_detect.P<P:ce005>:ERROR: `start` received before `setup`!
+[2019-04-20 02:21:50,945] cycle_knot_detect.P<P:ce003>:ERROR: `start` received before `setup`!
+[2019-04-20 02:21:50,946] cycle_knot_detect.P<P:ce002>:ERROR: `start` received before `setup`!
+[2019-04-20 02:21:50,947] cycle_knot_detect.P<P:ce004>:ERROR: `start` received before `setup`!
+[2019-04-20 02:21:50,948] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 02:24:14,966] da.api<MainProcess>:INFO: <Node_:56401> initialized at 127.0.0.1:(UdpTransport=18813, TcpTransport=33722).
+[2019-04-20 02:24:14,966] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 02:24:14,967] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 02:24:14,967] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 02:24:15,065] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 02:24:15,068] cycle_knot_detect.P<P:23005>:ERROR: KeyError(<P:23002>,) when calling handler '_P_handler_369' with '{'type': 'leaf', 'sender': <P:23002>, 'S': []}': <P:23002>
+[2019-04-20 02:24:15,070] cycle_knot_detect.P<P:23004>:ERROR: KeyError(<P:23003>,) when calling handler '_P_handler_369' with '{'type': 'cycle', 'sender': <P:23003>, 'S': []}': <P:23003>
+[2019-04-20 02:25:12,558] da.api<MainProcess>:INFO: <Node_:8a801> initialized at 127.0.0.1:(UdpTransport=19641, TcpTransport=36779).
+[2019-04-20 02:25:12,559] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 02:25:12,559] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 02:25:12,560] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 02:25:12,663] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 02:25:12,665] cycle_knot_detect.P<P:e7003>:ERROR: KeyError(<P:e7005>,) when calling handler '_P_handler_371' with '{'type': 'leaf', 'sender': <P:e7005>, 'S': []}': <P:e7005>
+[2019-04-20 02:25:12,667] cycle_knot_detect.P<P:e7004>:ERROR: KeyError(<P:e7002>,) when calling handler '_P_handler_371' with '{'type': 'cycle', 'sender': <P:e7002>, 'S': []}': <P:e7002>
