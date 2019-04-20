@@ -8,8 +8,12 @@ class P(process):
         self.status = 'undefined'
         self.num_suc = 0
         self.has_sent_cycle_message = False
+        self.has_terminated_earlier = False
+        self.earlier_reply_sent=''
         self.this_S = {}
         self.result = 'unknown'
+        self.parent=null
+        self.replies_received={'cycle':0,'cycle_only':0,'incomplete_search':0,'leaf':0}
 
     def initiate():
         if own_id == 1:
@@ -17,8 +21,10 @@ class P(process):
             num_suc = len(successors)
             # Should we send the process reference or own_id
             send(('Request', self), to=successors)
+        else:
+            mode = 'sleep'
+            num_suc = 0
 
-    
     def receive(msg=('Request', sender)):
         # Utility function to obtain the marked values
         def bar(i):
@@ -27,14 +33,29 @@ class P(process):
 
         if own_id == 1:
             if has_sent_cycle_message:
-                S = [bar[str(own_id)]]
+                S = [bar(own_id)]
             else:
                 S = []
             # Should we send the process reference or own_id
-            send(('Reply', 'cycle', self, S), to=sender)
             has_sent_cycle_message = True
+            send(('Reply', 'cycle', self, S), to=sender)
         else:
             # TODO: Add Non-initiator response here
+            if has_terminated_earlier:
+                send(('Reply', earlier_reply_sent, self, S), to=sender)
+            elif mode== 'awake':
+                earlier_reply_sent='incomplete_search'
+                send(('Reply', 'incomplete_search', self, [own_id]), to=sender)
+            else:
+                if len(successors) == 0:
+                    earlier_reply_sent='leaf'
+                    send(('Reply', 'leaf', self, []), to=sender)
+                else:
+                    parent=sender
+                    mode='awake'
+                    num_suc = len(successors)
+                    send(('Request', self), to=successors)
+
 
     def receive(msg=('Reply', type, sender, S)):
         # Utility function to merge the two sets
@@ -61,7 +82,7 @@ class P(process):
                 return 'leaf'
             else:
                 output("Shouldn't come here!!!")
-                
+
         if own_id == 1:
             num_suc -= 1
             this_S[sender] = set_union(this_S[sender], S)
@@ -88,6 +109,34 @@ class P(process):
                 send(('Terminate'), to=self)
         else:
             # TODO: Add the non-initiator response
+            num_suc -= 1
+            this_S[sender] = set_union(this_S[sender], S)
+            status = type_exor(status, type)
+            replies_received[type]=1
+            if num_suc == 0:
+                new_set = []
+                for set_kj in this_S:
+                    new_set = set_union(new_set, set_kj)
+
+                if earlier_reply_sent== 'incomplete_search':
+                    new_set = set_union(new_set, [bar(own_id)])
+                unmarked_elements = [i for i in new_set if i > 0]
+                marked_elements = [i for i in new_set if i < 0]
+                if status == 'leaf' or ( status == 'incomplete_search' and not unmarked_elements):
+                    send(('Reply', 'leaf', self, []), to=parent)
+                if status == 'incomplete_search' and unmarked_elements:
+                    send(('Reply', 'incomplete_search', self, new_set), to=parent)
+                if status == 'cycle_only':
+                    send(('Reply', 'cycle_only', self, []), to=parent)
+                if status =='cycle':
+                    if  replies_received['cycle']==1 and replies_received['cycle_only']==0 and replies_received['incomplete_search']==0
+                    and replies_received['leaf']==0:
+                        send(('Reply', 'cycle', self, new_set), to=parent)
+                    elif not unmarked_elements:
+                        send(('Reply', 'cycle_only', self, new_set), to=parent)
+                    else:
+                        send(('Reply', 'cycle', self, new_set), to=parent)
+              send(('Terminate'), to=self)
 
 
     def run():

@@ -1,0 +1,35 @@
+[2019-04-19 20:53:41,241] da.api<MainProcess>:INFO: <Node_:35401> initialized at 127.0.0.1:(UdpTransport=33131, TcpTransport=28734).
+[2019-04-19 20:53:41,241] da.api<MainProcess>:INFO: Starting program <module 'leader_election_example' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/leader_election_example.py'>...
+[2019-04-19 20:53:41,241] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-19 20:53:41,242] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-19 20:53:41,638] leader_election_example.P<P:e9c03>:OUTPUT: YO from  <P:e9c03>
+[2019-04-19 20:53:41,639] leader_election_example.P<P:e9c08>:OUTPUT: YO from  <P:e9c08>
+[2019-04-19 20:53:41,640] leader_election_example.P<P:e9c09>:OUTPUT: YO from  <P:e9c09>
+[2019-04-19 20:53:41,639] leader_election_example.P<P:e9c02>:OUTPUT: YO from  <P:e9c02>
+[2019-04-19 20:53:41,642] leader_election_example.P<P:e9c0a>:OUTPUT: YO from  <P:e9c0a>
+[2019-04-19 20:53:41,644] leader_election_example.P<P:e9c04>:OUTPUT: YO from  <P:e9c04>
+[2019-04-19 20:53:41,644] leader_election_example.P<P:e9c05>:OUTPUT: YO from  <P:e9c05>
+[2019-04-19 20:53:41,644] leader_election_example.P<P:e9c06>:OUTPUT: YO from  <P:e9c06>
+[2019-04-19 20:53:41,644] leader_election_example.P<P:e9c07>:OUTPUT: YO from  <P:e9c07>
+[2019-04-19 20:53:41,643] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-19 20:53:41,650] leader_election_example.P<P:e9c0b>:OUTPUT: YO from  <P:e9c0b>
+[2019-04-19 20:53:41,655] leader_election_example.P<P:e9c03>:OUTPUT: Done! from  <P:e9c03>
+[2019-04-19 20:53:41,655] leader_election_example.P<P:e9c03>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,655] leader_election_example.P<P:e9c08>:OUTPUT: Done! from  <P:e9c08>
+[2019-04-19 20:53:41,656] leader_election_example.P<P:e9c08>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,656] leader_election_example.P<P:e9c02>:OUTPUT: Done! from  <P:e9c02>
+[2019-04-19 20:53:41,657] leader_election_example.P<P:e9c02>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,657] leader_election_example.P<P:e9c09>:OUTPUT: Done! from  <P:e9c09>
+[2019-04-19 20:53:41,659] leader_election_example.P<P:e9c0a>:OUTPUT: Done! from  <P:e9c0a>
+[2019-04-19 20:53:41,660] leader_election_example.P<P:e9c0a>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,660] leader_election_example.P<P:e9c06>:OUTPUT: Done! from  <P:e9c06>
+[2019-04-19 20:53:41,660] leader_election_example.P<P:e9c06>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,661] leader_election_example.P<P:e9c05>:OUTPUT: Done! from  <P:e9c05>
+[2019-04-19 20:53:41,661] leader_election_example.P<P:e9c05>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,663] leader_election_example.P<P:e9c04>:OUTPUT: Done! from  <P:e9c04>
+[2019-04-19 20:53:41,664] leader_election_example.P<P:e9c07>:OUTPUT: Done! from  <P:e9c07>
+[2019-04-19 20:53:41,664] leader_election_example.P<P:e9c04>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,664] leader_election_example.P<P:e9c07>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,664] leader_election_example.P<P:e9c09>:OUTPUT: Leader is <P:e9c0b>
+[2019-04-19 20:53:41,665] leader_election_example.P<P:e9c0b>:OUTPUT: Done! from  <P:e9c0b>
+[2019-04-19 20:53:41,666] leader_election_example.P<P:e9c0b>:OUTPUT: Leader is <P:e9c0b>
