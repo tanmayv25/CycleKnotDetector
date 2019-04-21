@@ -2,8 +2,8 @@
 import da
 PatternExpr_269 = da.pat.TuplePattern([da.pat.ConstantPattern('Request'), da.pat.FreePattern('sender')])
 PatternExpr_386 = da.pat.TuplePattern([da.pat.ConstantPattern('Reply'), da.pat.FreePattern('type'), da.pat.FreePattern('sender'), da.pat.FreePattern('S')])
-PatternExpr_782 = da.pat.ConstantPattern('Terminate')
-PatternExpr_786 = da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.FreePattern(None), da.pat.FreePattern(None)]), da.pat.ConstantPattern('Terminate')])
+PatternExpr_796 = da.pat.ConstantPattern('Terminate')
+PatternExpr_800 = da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.FreePattern(None), da.pat.FreePattern(None)]), da.pat.ConstantPattern('Terminate')])
 _config_object = {}
 import sys
 import graph_config
@@ -13,10 +13,10 @@ class P(da.DistProcess):
     def __init__(self, procimpl, props):
         super().__init__(procimpl, props)
         self._PReceivedEvent_2 = []
-        self._events.extend([da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_0', PatternExpr_269, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_268]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_1', PatternExpr_386, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_385]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_2', PatternExpr_782, sources=None, destinations=None, timestamps=None, record_history=True, handlers=[])])
+        self._events.extend([da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_0', PatternExpr_269, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_268]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_1', PatternExpr_386, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_385]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_2', PatternExpr_796, sources=None, destinations=None, timestamps=None, record_history=True, handlers=[])])
 
-    def setup(self, successors, own_id, all_processors, **rest_862):
-        super().setup(successors=successors, own_id=own_id, all_processors=all_processors, **rest_862)
+    def setup(self, successors, own_id, all_processors, **rest_876):
+        super().setup(successors=successors, own_id=own_id, all_processors=all_processors, **rest_876)
         self._state.successors = successors
         self._state.own_id = own_id
         self._state.all_processors = all_processors
@@ -33,15 +33,15 @@ class P(da.DistProcess):
 
     def run(self):
         self.initiate()
-        super()._label('_st_label_779', block=False)
-        _st_label_779 = 0
-        while (_st_label_779 == 0):
-            _st_label_779 += 1
-            if PatternExpr_786.match_iter(self._PReceivedEvent_2, SELF_ID=self._id):
-                _st_label_779 += 1
+        super()._label('_st_label_793', block=False)
+        _st_label_793 = 0
+        while (_st_label_793 == 0):
+            _st_label_793 += 1
+            if PatternExpr_800.match_iter(self._PReceivedEvent_2, SELF_ID=self._id):
+                _st_label_793 += 1
             else:
-                super()._label('_st_label_779', block=True)
-                _st_label_779 -= 1
+                super()._label('_st_label_793', block=True)
+                _st_label_793 -= 1
         self.output('Done!!!')
 
     def initiate(self):
@@ -57,7 +57,7 @@ class P(da.DistProcess):
 
         def bar(i):
             return ((- 1) * i)
-        S = set()
+        S = {}
         if (self._state.own_id == 1):
             if self._state.has_sent_cycle_message:
                 S.add(bar(self._state.own_id))
@@ -67,16 +67,17 @@ class P(da.DistProcess):
             self.send(('Reply', self._state.earlier_reply_sent, self._id, S), to=sender)
         elif (self._state.mode == 'awake'):
             self._state.earlier_reply_sent = 'incomplete_search'
-            S = set()
+            S = {}
             S.add(self._state.own_id)
             self.send(('Reply', 'incomplete_search', self._id, S), to=sender)
         elif (len(self._state.successors) == 0):
-            S = set()
+            S = {}
             self._state.earlier_reply_sent = 'leaf'
             self.send(('Reply', 'leaf', self._id, S), to=sender)
         else:
             self._state.parent = sender
             self._state.mode = 'awake'
+            self._state.status = 'incomplete_search'
             self._state.num_suc = len(self._state.successors)
             self.send(('Request', self._id), to=self._state.successors)
     _P_handler_268._labels = None
@@ -93,7 +94,7 @@ class P(da.DistProcess):
             return new_set
 
         def type_exor(type1, type2):
-            if ((type2 == 'cycle_only') or ((type1 == 'cycle') and (type2 == 'leaf')) or ((type1 == 'leaf') and (type2 == 'cycle'))):
+            if (((type2 == 'cycle_only') or (type1 == 'cycle_only')) or ((type1 == 'cycle') and (type2 == 'leaf')) or ((type1 == 'leaf') and (type2 == 'cycle'))):
                 return 'cycle_only'
             elif (((type1 == 'cycle') and (type2 == 'incomplete_search')) or ((type2 == 'cycle') and (type1 == 'incomplete_search'))):
                 return 'cycle'
@@ -103,7 +104,8 @@ class P(da.DistProcess):
                 self.output("Shouldn't come here!!!")
         if (self._state.own_id == 1):
             self._state.num_suc -= 1
-            self._state.this_S[sender] = set_union(self._state.this_S[sender], S)
+            if (sender in self._state.this_S):
+                self._state.this_S[sender] = set_union(self._state.this_S[sender], S)
             self._state.status = type_exor(self._state.status, type)
             if (self._state.num_suc == 0):
                 new_set = []
@@ -117,10 +119,12 @@ class P(da.DistProcess):
                     (self._state.result == 'cycle')
                 elif ((self._state.status == 'cycle') and (not unmarked_elements)):
                     self._state.result = 'knot'
+                self.output(self._state.result)
                 self.send('Terminate', to=self._state.all_processors)
         else:
             self._state.num_suc -= 1
-            self._state.this_S[sender] = set_union(self._state.this_S[sender], S)
+            if (sender in self._state.this_S):
+                self._state.this_S[sender] = set_union(self._state.this_S[sender], S)
             self._state.status = type_exor(self._state.status, type)
             self._state.replies_received[type] = 1
             if (self._state.num_suc == 0):
@@ -132,8 +136,8 @@ class P(da.DistProcess):
                     new_set = set_union(new_set, [bar(self._state.own_id)])
                 unmarked_elements = [i for i in new_set if (i > 0)]
                 marked_elements = [i for i in new_set if (i < 0)]
-                empty_set = set()
-                if ((self._state.status == 'leaf') or ((self._state.status == 'incomplete_search') and (not unmarked_elements))):
+                empty_set = {}
+                if ((self._state.status == 'leaf') or ((self._state.status == 'incomplete_search') and (not unmarked_elements) and marked_elements)):
                     self.send(('Reply', 'leaf', self._id, empty_set), to=self._state.parent)
                 if ((self._state.status == 'incomplete_search') and unmarked_elements):
                     self.send(('Reply', 'incomplete_search', self._id, new_set), to=self._state.parent)

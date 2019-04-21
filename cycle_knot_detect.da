@@ -30,7 +30,7 @@ class P(process):
         def bar(i):
             return -1 * i
 
-        S=set()
+        S={}
         if own_id == 1:
             if has_sent_cycle_message:
                 S.add(bar(own_id))
@@ -43,17 +43,18 @@ class P(process):
                 send(('Reply', earlier_reply_sent, self, S), to=sender)
             elif mode== 'awake':
                 earlier_reply_sent='incomplete_search'
-                S=set()
+                S={}
                 S.add(own_id)
                 send(('Reply', 'incomplete_search', self, S), to=sender)
             else:
                 if len(successors) == 0:
-                    S=set()
+                    S={}
                     earlier_reply_sent='leaf'
                     send(('Reply', 'leaf', self, S), to=sender)
                 else:
                     parent=sender
                     mode='awake'
+                    status='incomplete_search'
                     num_suc = len(successors)
                     send(('Request', self), to=successors)
 
@@ -71,7 +72,7 @@ class P(process):
             return new_set
 
         def type_exor(type1, type2):
-            if (type2 == 'cycle_only') \
+            if (type2 == 'cycle_only' or type1== 'cycle_only') \
                 or (type1 == 'cycle' and type2 == 'leaf') \
                 or (type1 == 'leaf' and type2 == 'cycle'):
                 return 'cycle_only'
@@ -86,7 +87,8 @@ class P(process):
 
         if own_id == 1:
             num_suc -= 1
-            this_S[sender] = set_union(this_S[sender], S)
+            if sender in this_S:
+                this_S[sender] = set_union(this_S[sender], S)
             status = type_exor(status, type)
             if num_suc == 0:
                 # FLAG: Obtaining the union. Need to verify if the Sij was a typo \
@@ -107,12 +109,14 @@ class P(process):
                     result == 'cycle'
                 elif status == 'cycle' and not unmarked_elements:
                     result = 'knot'
+                output(result)
                 send(('Terminate'), to=all_processors)
 
         else:
             # TODO: Add the non-initiator response
             num_suc -= 1
-            this_S[sender] = set_union(this_S[sender], S)
+            if sender in this_S:
+                this_S[sender] = set_union(this_S[sender], S)
             status = type_exor(status, type)
             replies_received[type]=1
             if num_suc == 0:
@@ -125,8 +129,8 @@ class P(process):
                     new_set = set_union(new_set, [bar(own_id)])
                 unmarked_elements = [i for i in new_set if i > 0]
                 marked_elements = [i for i in new_set if i < 0]
-                empty_set=set()
-                if status == 'leaf' or ( status == 'incomplete_search' and not unmarked_elements):
+                empty_set={}
+                if status == 'leaf' or ( status == 'incomplete_search' and not unmarked_elements and marked_elements ):
                     send(('Reply', 'leaf', self, empty_set), to=parent)
                 if status == 'incomplete_search' and unmarked_elements:
                     send(('Reply', 'incomplete_search', self, new_set), to=parent)
