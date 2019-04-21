@@ -3,7 +3,7 @@ import graph_config
 
 
 class P(process):
-    def setup(successors:set, own_id:int):
+    def setup(successors:set, own_id:int, all_processors:set):
         self.mode = 'sleep'
         self.status = 'undefined'
         self.num_suc = 0
@@ -12,7 +12,7 @@ class P(process):
         self.earlier_reply_sent=''
         self.this_S = {}
         self.result = 'unknown'
-        self.parent=self
+        self.parent=0
         self.replies_received={'cycle':0,'cycle_only':0,'incomplete_search':0,'leaf':0}
 
     def initiate():
@@ -30,12 +30,10 @@ class P(process):
         def bar(i):
             return -1 * i
 
-
+        S=set()
         if own_id == 1:
             if has_sent_cycle_message:
-                S = [bar(own_id)]
-            else:
-                S = []
+                S.add(bar(own_id))
             # Should we send the process reference or own_id
             has_sent_cycle_message = True
             send(('Reply', 'cycle', self, S), to=sender)
@@ -45,11 +43,14 @@ class P(process):
                 send(('Reply', earlier_reply_sent, self, S), to=sender)
             elif mode== 'awake':
                 earlier_reply_sent='incomplete_search'
-                send(('Reply', 'incomplete_search', self, [own_id]), to=sender)
+                S=set()
+                S.add(own_id)
+                send(('Reply', 'incomplete_search', self, S), to=sender)
             else:
                 if len(successors) == 0:
+                    S=set()
                     earlier_reply_sent='leaf'
-                    send(('Reply', 'leaf', self, []), to=sender)
+                    send(('Reply', 'leaf', self, S), to=sender)
                 else:
                     parent=sender
                     mode='awake'
@@ -99,14 +100,15 @@ class P(process):
                 # to self
 
                 unmarked_elements = [i for i in new_set if i > 0]
+                has_terminated_earlier=True
                 if status == 'cycle_only':
                     result = 'cycle'
                 elif status == 'cycle' and not new_set:
                     result == 'cycle'
                 elif status == 'cycle' and not unmarked_elements:
                     result = 'knot'
-                output('I am in a ', result)
-                send(('Terminate'), to=self)
+                send(('Terminate'), to=all_processors)
+
         else:
             # TODO: Add the non-initiator response
             num_suc -= 1
@@ -118,16 +120,18 @@ class P(process):
                 for set_kj in this_S:
                     new_set = set_union(new_set, set_kj)
 
+                has_terminated_earlier=True
                 if earlier_reply_sent== 'incomplete_search':
                     new_set = set_union(new_set, [bar(own_id)])
                 unmarked_elements = [i for i in new_set if i > 0]
                 marked_elements = [i for i in new_set if i < 0]
+                empty_set=set()
                 if status == 'leaf' or ( status == 'incomplete_search' and not unmarked_elements):
-                    send(('Reply', 'leaf', self, []), to=parent)
+                    send(('Reply', 'leaf', self, empty_set), to=parent)
                 if status == 'incomplete_search' and unmarked_elements:
                     send(('Reply', 'incomplete_search', self, new_set), to=parent)
                 if status == 'cycle_only':
-                    send(('Reply', 'cycle_only', self, []), to=parent)
+                    send(('Reply', 'cycle_only', self, empty_set), to=parent)
                 if status =='cycle':
                     if  replies_received['cycle']==1 and replies_received['cycle_only']==0 and replies_received['incomplete_search']==0 \
                     and replies_received['leaf']==0:
@@ -136,9 +140,6 @@ class P(process):
                         send(('Reply', 'cycle_only', self, new_set), to=parent)
                     else:
                         send(('Reply', 'cycle', self, new_set), to=parent)
-
-                send(('Terminate'), to=self)
-
 
     def run():
         initiate()
@@ -152,5 +153,5 @@ def main():
 
     for i, p in enumerate(ps):
         successors = [ps[i - 1] for i in graph_config.network1['node'+str(i+1)]]
-        setup({p}, (successors,i+1))
+        setup({p}, (successors,i+1,ps))
     start(ps)

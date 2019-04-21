@@ -60,3 +60,38 @@
 [2019-04-20 02:25:12,663] da.api<MainProcess>:INFO: Main process terminated.
 [2019-04-20 02:25:12,665] cycle_knot_detect.P<P:e7003>:ERROR: KeyError(<P:e7005>,) when calling handler '_P_handler_371' with '{'type': 'leaf', 'sender': <P:e7005>, 'S': []}': <P:e7005>
 [2019-04-20 02:25:12,667] cycle_knot_detect.P<P:e7004>:ERROR: KeyError(<P:e7002>,) when calling handler '_P_handler_371' with '{'type': 'cycle', 'sender': <P:e7002>, 'S': []}': <P:e7002>
+[2019-04-20 21:34:35,747] da.api<MainProcess>:INFO: <Node_:be401> initialized at 127.0.0.1:(UdpTransport=36055, TcpTransport=35236).
+[2019-04-20 21:34:35,748] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 21:34:35,749] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 21:34:35,750] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 21:34:35,851] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 21:34:35,854] cycle_knot_detect.P<P:41c05>:ERROR: KeyError(<P:41c04>,) when calling handler '_P_handler_369' with '{'type': 'leaf', 'sender': <P:41c04>, 'S': []}': <P:41c04>
+[2019-04-20 21:34:35,856] cycle_knot_detect.P<P:41c02>:ERROR: KeyError(<P:41c03>,) when calling handler '_P_handler_369' with '{'type': 'cycle', 'sender': <P:41c03>, 'S': []}': <P:41c03>
+[2019-04-20 22:02:58,317] da.api<MainProcess>:INFO: <Node_:19401> initialized at 127.0.0.1:(UdpTransport=10334, TcpTransport=17809).
+[2019-04-20 22:02:58,317] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 22:02:58,317] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 22:02:58,318] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 22:02:58,412] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 22:02:58,415] cycle_knot_detect.P<P:2fc03>:ERROR: KeyError(<P:2fc05>,) when calling handler '_P_handler_374' with '{'type': 'leaf', 'sender': <P:2fc05>, 'S': set()}': <P:2fc05>
+[2019-04-20 22:02:58,417] cycle_knot_detect.P<P:2fc02>:ERROR: KeyError(<P:2fc04>,) when calling handler '_P_handler_374' with '{'type': 'cycle', 'sender': <P:2fc04>, 'S': set()}': <P:2fc04>
+[2019-04-20 22:11:44,991] da.api<MainProcess>:INFO: <Node_:5e401> initialized at 127.0.0.1:(UdpTransport=39994, TcpTransport=22591).
+[2019-04-20 22:11:44,991] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 22:11:44,991] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 22:11:44,992] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 22:11:45,115] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 22:11:45,118] cycle_knot_detect.P<P:da002>:ERROR: KeyError(<P:da003>,) when calling handler '_P_handler_385' with '{'type': 'leaf', 'sender': <P:da003>, 'S': set()}': <P:da003>
+[2019-04-20 22:11:45,121] cycle_knot_detect.P<P:da005>:ERROR: KeyError(<P:da004>,) when calling handler '_P_handler_385' with '{'type': 'cycle', 'sender': <P:da004>, 'S': set()}': <P:da004>
+[2019-04-20 22:12:00,846] da.api<MainProcess>:INFO: <Node_:29c01> initialized at 127.0.0.1:(UdpTransport=34016, TcpTransport=30708).
+[2019-04-20 22:12:00,847] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 22:12:00,847] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 22:12:00,848] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 22:12:00,936] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 22:12:00,939] cycle_knot_detect.P<P:2d404>:ERROR: KeyError(<P:2d403>,) when calling handler '_P_handler_385' with '{'type': 'leaf', 'sender': <P:2d403>, 'S': set()}': <P:2d403>
+[2019-04-20 22:12:00,940] cycle_knot_detect.P<P:2d405>:ERROR: KeyError(<P:2d402>,) when calling handler '_P_handler_385' with '{'type': 'cycle', 'sender': <P:2d402>, 'S': set()}': <P:2d402>
+[2019-04-20 22:16:38,764] da.api<MainProcess>:INFO: <Node_:1a001> initialized at 127.0.0.1:(UdpTransport=37450, TcpTransport=26404).
+[2019-04-20 22:16:38,764] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-20 22:16:38,765] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-20 22:16:38,765] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-20 22:16:38,868] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-20 22:16:38,871] cycle_knot_detect.P<P:59c03>:ERROR: KeyError(<P:59c04>,) when calling handler '_P_handler_385' with '{'type': 'leaf', 'sender': <P:59c04>, 'S': set()}': <P:59c04>
+[2019-04-20 22:16:38,873] cycle_knot_detect.P<P:59c05>:ERROR: KeyError(<P:59c02>,) when calling handler '_P_handler_385' with '{'type': 'cycle', 'sender': <P:59c02>, 'S': set()}': <P:59c02>
