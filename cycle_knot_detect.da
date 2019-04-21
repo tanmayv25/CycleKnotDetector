@@ -1,148 +1,160 @@
 import sys
 import graph_config
 
-
 class P(process):
-    def setup(successors:set, own_id:int, all_processors:set):
+    def setup(successors:set, own_id:int, all_processors:set, initiator:int):
         self.mode = 'sleep'
         self.status = 'undefined'
         self.num_suc = 0
-        self.has_sent_cycle_message = False
+        self.initiator_sent_cycle_message = False
         self.has_terminated_earlier = False
-        self.earlier_reply_sent=''
+        self.has_sent_incomplete_search=False
+        self.S_sent_with_termination=set()
+        self.type_sent_with_termination=''
         self.this_S = {}
         self.result = 'unknown'
-        self.parent=0
+        self.parent = self
         self.replies_received={'cycle':0,'cycle_only':0,'incomplete_search':0,'leaf':0}
 
     def initiate():
-        if own_id == 1:
+        if own_id == initiator:
             mode = 'awake'
             num_suc = len(successors)
             # Should we send the process reference or own_id
             send(('Request', self), to=successors)
-        else:
-            mode = 'sleep'
-            num_suc = 0
 
     def receive(msg=('Request', sender)):
+        output('Request', own_id , sep='     ')
         # Utility function to obtain the marked values
         def bar(i):
             return -1 * i
 
-        S={}
-        if own_id == 1:
-            if has_sent_cycle_message:
+        if own_id == initiator:
+            S=set()
+            if initiator_sent_cycle_message:
                 S.add(bar(own_id))
-            # Should we send the process reference or own_id
-            has_sent_cycle_message = True
+            initiator_sent_cycle_message = True
             send(('Reply', 'cycle', self, S), to=sender)
         else:
             # TODO: Add Non-initiator response here
             if has_terminated_earlier:
-                send(('Reply', earlier_reply_sent, self, S), to=sender)
-            elif mode== 'awake':
-                earlier_reply_sent='incomplete_search'
-                S={}
-                S.add(own_id)
-                send(('Reply', 'incomplete_search', self, S), to=sender)
+                send(('Reply', type_sent_with_termination, self, S_sent_with_termination), to=sender)
+            elif mode == 'awake':
+                has_sent_incomplete_search=True
+                pk=set()
+                pk.add(own_id)
+                send(('Reply', 'incomplete_search', self, pk), to=sender)
             else:
                 if len(successors) == 0:
-                    S={}
-                    earlier_reply_sent='leaf'
+                    S=set()
+                    status='leaf'
                     send(('Reply', 'leaf', self, S), to=sender)
                 else:
                     parent=sender
                     mode='awake'
-                    status='incomplete_search'
+                    #status='incomplete_search'
                     num_suc = len(successors)
                     send(('Request', self), to=successors)
 
 
     def receive(msg=('Reply', type, sender, S)):
+        output('Reply', type, own_id , S, sep='     ')
         # Utility function to merge the two sets
+        def bar(i):
+            return -1 * i
         def set_union(S1, S2):
-            new_set = S1.union(S2)
+
             # Annhilate the corresponding values \
             # of the negative values if present
-            for i in new_set:
-                if i < 0:
-                    if (-1 * i) in new_set:
-                        new_set = new_set.remove(-1 * i)
-            return new_set
+            for i in S1:
+                if i < 0 and (-1 * i) in S2:
+                    S2.remove(-1 * i)
+            for i in S2:
+                if i < 0 and (-1 * i) in S1:
+                    S1.remove(-1 * i)
+
+            U = S1.union(S2)
+            return U
 
         def type_exor(type1, type2):
+            output(type1, type2)
             if (type2 == 'cycle_only' or type1== 'cycle_only') \
                 or (type1 == 'cycle' and type2 == 'leaf') \
-                or (type1 == 'leaf' and type2 == 'cycle'):
+                or (type2 == 'cycle' and type1 == 'leaf'):
                 return 'cycle_only'
-            elif (type1 == 'cycle' and type2 == 'incomplete_search') \
-                or (type2 == 'cycle' and type1 == 'incomplete_search'):
+            elif (type1 == 'cycle' and type2 == 'incomplete_search') or (type2 == 'cycle' and type1 == 'incomplete_search'):
                 return 'cycle'
-            elif (type1 == 'leaf' and type2 == 'incomplete_search') \
-                or (type2 == 'leaf' and type1 == 'incomplete_search'):
+            elif (type1 == 'leaf' and type2 == 'incomplete_search')  or (type2 == 'leaf' and type1 == 'incomplete_search'):
                 return 'leaf'
             else:
-                output("Shouldn't come here!!!")
+                #output("Shouldn't come here!!!")
+                return type1
 
-        if own_id == 1:
-            num_suc -= 1
-            if sender in this_S:
-                this_S[sender] = set_union(this_S[sender], S)
+        num_suc -= 1
+        if sender in this_S:
+            this_S[sender] = set_union(this_S[sender], S)
+        else:
+            this_S[sender]=S
+        if status =='undefined':
+            status=type
+        else:
             status = type_exor(status, type)
-            if num_suc == 0:
-                # FLAG: Obtaining the union. Need to verify if the Sij was a typo \
-                # Considering it a typo as for now.
-                new_set = []
-                for set_1j in this_S:
-                    new_set = set_union(new_set, set_1j)
+        if num_suc == 0 :
+            new_set = set()
 
-                # Verify the manner of termination here \
-                # Currently implementing by sending a signal \
-                # to self
+            for set_j in this_S.values():
+                new_set = set_union(new_set, set_j)
 
-                unmarked_elements = [i for i in new_set if i > 0]
-                has_terminated_earlier=True
+            unmarked_elements = [i for i in new_set if i > 0]
+            marked_elements = [i for i in new_set if i < 0]
+
+            if own_id == initiator:
+                #output(status, len(new_set))
                 if status == 'cycle_only':
                     result = 'cycle'
-                elif status == 'cycle' and not new_set:
-                    result == 'cycle'
-                elif status == 'cycle' and not unmarked_elements:
+                elif status == 'cycle' and len(new_set) == 0:
+                    result = 'cycle'
+                elif status == 'cycle' and len(unmarked_elements) == 0 and len(marked_elements) > 0:
                     result = 'knot'
-                output(result)
+                else:
+                    result = 'Neither Cycle nor Knot'
+                output('The Initiator node is inside a:', result)
                 send(('Terminate'), to=all_processors)
 
-        else:
-            # TODO: Add the non-initiator response
-            num_suc -= 1
-            if sender in this_S:
-                this_S[sender] = set_union(this_S[sender], S)
-            status = type_exor(status, type)
-            replies_received[type]=1
-            if num_suc == 0:
-                new_set = []
-                for set_kj in this_S:
-                    new_set = set_union(new_set, set_kj)
+            else:
+                replies_received[type]=1
+
+                if has_sent_incomplete_search:
+                    pk_bar=set()
+                    pk_bar.add(bar(own_id))
+                    new_set = set_union(new_set, pk_bar)
 
                 has_terminated_earlier=True
-                if earlier_reply_sent== 'incomplete_search':
-                    new_set = set_union(new_set, [bar(own_id)])
+                S_sent_with_termination=new_set
                 unmarked_elements = [i for i in new_set if i > 0]
                 marked_elements = [i for i in new_set if i < 0]
-                empty_set={}
-                if status == 'leaf' or ( status == 'incomplete_search' and not unmarked_elements and marked_elements ):
+                empty_set=set()
+                if status == 'leaf' or ( status == 'incomplete_search' and len(unmarked_elements)==0 and len(marked_elements) > 0 ):
+                    S_sent_with_termination=empty_set
+                    type_sent_with_termination='leaf'
                     send(('Reply', 'leaf', self, empty_set), to=parent)
-                if status == 'incomplete_search' and unmarked_elements:
+                if status == 'incomplete_search' and len(unmarked_elements)>0:
+                    type_sent_with_termination='incomplete_search'
                     send(('Reply', 'incomplete_search', self, new_set), to=parent)
                 if status == 'cycle_only':
+                    S_sent_with_termination=empty_set
+                    type_sent_with_termination='cycle_only'
                     send(('Reply', 'cycle_only', self, empty_set), to=parent)
                 if status =='cycle':
                     if  replies_received['cycle']==1 and replies_received['cycle_only']==0 and replies_received['incomplete_search']==0 \
                     and replies_received['leaf']==0:
+                        type_sent_with_termination='cycle'
                         send(('Reply', 'cycle', self, new_set), to=parent)
-                    elif not unmarked_elements:
+                    elif len(unmarked_elements)==0 and len(marked_elements)>0:
+                        type_sent_with_termination='cycle_only'
                         send(('Reply', 'cycle_only', self, new_set), to=parent)
                     else:
+                        type_sent_with_termination='cycle'
                         send(('Reply', 'cycle', self, new_set), to=parent)
 
     def run():
@@ -151,11 +163,11 @@ class P(process):
         output('Done!!!')
 
 def main():
-    n = graph_config.network1['total_nodes']
+    n = graph_config.test['total_nodes']
     config(channel="fifo")
     ps = list(new(P, num= n))
 
     for i, p in enumerate(ps):
-        successors = [ps[i - 1] for i in graph_config.network1['node'+str(i+1)]]
-        setup({p}, (successors,i+1,ps))
+        successors = [ps[i - 1] for i in graph_config.test['node'+str(i+1)]]
+        setup({p}, (successors,i+1,ps,graph_config.test['initiator']))
     start(ps)
