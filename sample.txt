@@ -1428,3 +1428,79 @@ NameError: name 'initiator' is not defined
 [2019-04-21 05:56:01,456] cycle_knot_detect.P<P:8a405>:OUTPUT: Done!!!
 [2019-04-21 05:56:01,457] cycle_knot_detect.P<P:8a403>:OUTPUT: Done!!!
 [2019-04-21 05:56:01,457] cycle_knot_detect.P<P:8a404>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,291] da.api<MainProcess>:INFO: <Node_:9cc01> initialized at 127.0.0.1:(UdpTransport=28825, TcpTransport=33379).
+[2019-04-21 06:02:18,291] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-21 06:02:18,292] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-21 06:02:18,293] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-21 06:02:18,435] cycle_knot_detect.P<P:1d005>:OUTPUT: Request     2
+[2019-04-21 06:02:18,437] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-21 06:02:18,437] cycle_knot_detect.P<P:1d002>:OUTPUT: Request     3
+[2019-04-21 06:02:18,438] cycle_knot_detect.P<P:1d00b>:OUTPUT: Request     4
+[2019-04-21 06:02:18,438] cycle_knot_detect.P<P:1d007>:OUTPUT: Request     5
+[2019-04-21 06:02:18,439] cycle_knot_detect.P<P:1d009>:OUTPUT: Request     6
+[2019-04-21 06:02:18,439] cycle_knot_detect.P<P:1d00a>:OUTPUT: Request     7
+[2019-04-21 06:02:18,440] cycle_knot_detect.P<P:1d006>:OUTPUT: Request     8
+[2019-04-21 06:02:18,440] cycle_knot_detect.P<P:1d004>:OUTPUT: Request     10
+[2019-04-21 06:02:18,440] cycle_knot_detect.P<P:1d008>:OUTPUT: Request     9
+[2019-04-21 06:02:18,441] cycle_knot_detect.P<P:1d00a>:OUTPUT: Reply     leaf     7     set()
+[2019-04-21 06:02:18,442] cycle_knot_detect.P<P:1d003>:OUTPUT: Request     1
+[2019-04-21 06:02:18,442] cycle_knot_detect.P<P:1d007>:OUTPUT: Reply     leaf     5     set()
+[2019-04-21 06:02:18,443] cycle_knot_detect.P<P:1d008>:OUTPUT: Reply     cycle     9     set()
+[2019-04-21 06:02:18,443] cycle_knot_detect.P<P:1d006>:OUTPUT: Reply     cycle     8     set()
+[2019-04-21 06:02:18,444] cycle_knot_detect.P<P:1d009>:OUTPUT: Reply     cycle     6     set()
+[2019-04-21 06:02:18,444] cycle_knot_detect.P<P:1d007>:OUTPUT: Reply     cycle     5     set()
+[2019-04-21 06:02:18,444] cycle_knot_detect.P<P:1d007>:OUTPUT: leaf cycle
+[2019-04-21 06:02:18,445] cycle_knot_detect.P<P:1d00b>:OUTPUT: Reply     cycle_only     4     set()
+[2019-04-21 06:02:18,445] cycle_knot_detect.P<P:1d002>:OUTPUT: Reply     cycle_only     3     set()
+[2019-04-21 06:02:18,446] cycle_knot_detect.P<P:1d005>:OUTPUT: Reply     cycle_only     2     set()
+[2019-04-21 06:02:18,447] cycle_knot_detect.P<P:1d003>:OUTPUT: Reply     cycle_only     1     set()
+[2019-04-21 06:02:18,447] cycle_knot_detect.P<P:1d003>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-21 06:02:18,448] cycle_knot_detect.P<P:1d003>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,448] cycle_knot_detect.P<P:1d002>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,448] cycle_knot_detect.P<P:1d007>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,448] cycle_knot_detect.P<P:1d00a>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,449] cycle_knot_detect.P<P:1d006>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,449] cycle_knot_detect.P<P:1d008>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,449] cycle_knot_detect.P<P:1d004>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,449] cycle_knot_detect.P<P:1d005>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,449] cycle_knot_detect.P<P:1d00b>:OUTPUT: Done!!!
+[2019-04-21 06:02:18,449] cycle_knot_detect.P<P:1d009>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,438] da.api<MainProcess>:INFO: <Node_:6e001> initialized at 127.0.0.1:(UdpTransport=39016, TcpTransport=24605).
+[2019-04-21 06:02:57,439] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-21 06:02:57,439] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-21 06:02:57,441] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-21 06:02:57,580] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-21 06:02:57,580] cycle_knot_detect.P<P:1c808>:OUTPUT: Request     2
+[2019-04-21 06:02:57,581] cycle_knot_detect.P<P:1c80a>:OUTPUT: Request     3
+[2019-04-21 06:02:57,581] cycle_knot_detect.P<P:1c809>:OUTPUT: Request     4
+[2019-04-21 06:02:57,582] cycle_knot_detect.P<P:1c805>:OUTPUT: Request     5
+[2019-04-21 06:02:57,582] cycle_knot_detect.P<P:1c802>:OUTPUT: Request     6
+[2019-04-21 06:02:57,583] cycle_knot_detect.P<P:1c804>:OUTPUT: Request     7
+[2019-04-21 06:02:57,583] cycle_knot_detect.P<P:1c80b>:OUTPUT: Request     8
+[2019-04-21 06:02:57,584] cycle_knot_detect.P<P:1c806>:OUTPUT: Request     10
+[2019-04-21 06:02:57,584] cycle_knot_detect.P<P:1c807>:OUTPUT: Request     9
+[2019-04-21 06:02:57,585] cycle_knot_detect.P<P:1c807>:OUTPUT: Request     9
+[2019-04-21 06:02:57,585] cycle_knot_detect.P<P:1c803>:OUTPUT: Request     1
+[2019-04-21 06:02:57,586] cycle_knot_detect.P<P:1c806>:OUTPUT: Reply     incomplete_search     10     {9}
+[2019-04-21 06:02:57,586] cycle_knot_detect.P<P:1c807>:OUTPUT: Reply     cycle     9     set()
+[2019-04-21 06:02:57,586] cycle_knot_detect.P<P:1c804>:OUTPUT: Reply     incomplete_search     7     {9}
+[2019-04-21 06:02:57,587] cycle_knot_detect.P<P:1c80b>:OUTPUT: Reply     cycle     8     {-9}
+[2019-04-21 06:02:57,587] cycle_knot_detect.P<P:1c805>:OUTPUT: Reply     incomplete_search     5     {9}
+[2019-04-21 06:02:57,588] cycle_knot_detect.P<P:1c802>:OUTPUT: Reply     cycle     6     {-9}
+[2019-04-21 06:02:57,589] cycle_knot_detect.P<P:1c805>:OUTPUT: Reply     cycle     5     {-9}
+[2019-04-21 06:02:57,589] cycle_knot_detect.P<P:1c805>:OUTPUT: incomplete_search cycle
+[2019-04-21 06:02:57,589] cycle_knot_detect.P<P:1c809>:OUTPUT: Reply     cycle     4     {-9}
+[2019-04-21 06:02:57,590] cycle_knot_detect.P<P:1c80a>:OUTPUT: Reply     cycle     3     {-9}
+[2019-04-21 06:02:57,590] cycle_knot_detect.P<P:1c808>:OUTPUT: Reply     cycle     2     {-9}
+[2019-04-21 06:02:57,591] cycle_knot_detect.P<P:1c803>:OUTPUT: Reply     cycle     1     {-9}
+[2019-04-21 06:02:57,591] cycle_knot_detect.P<P:1c803>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-21 06:02:57,592] cycle_knot_detect.P<P:1c803>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,592] cycle_knot_detect.P<P:1c80a>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c809>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c805>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c802>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c804>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c80b>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c807>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c806>:OUTPUT: Done!!!
+[2019-04-21 06:02:57,593] cycle_knot_detect.P<P:1c808>:OUTPUT: Done!!!
