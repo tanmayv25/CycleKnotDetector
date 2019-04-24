@@ -1,13 +1,15 @@
 
 network1 = dict(
     # Records the total number of nodes in the system
-    total_nodes = 4,
-    initiator =1,
+    total_nodes = 6,
+    initiator =5,
     # The graph edges in the network
     node1 = [2],
-    node2 = [4,3],
-    node3 = [],
-    node4 = [1]
+    node2 = [3,6],
+    node3 = [4],
+    node4 = [5],
+    node5= [1],
+    node6 = [1]
 )
 
 network2 = dict(
@@ -71,4 +73,4 @@ network5 = dict(
     node9 = [1],
     node10 = [9]
 )
-test = network5
+test = network1

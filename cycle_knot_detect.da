@@ -1,8 +1,9 @@
 import sys
 import graph_config
+import random
 
 class P(process):
-    def setup(successors:set, own_id:int, all_processors:set, initiator:int):
+    def setup(successors:set, own_id:int, all_processors:set, initiator_id:int, initiator:P, no_of_edges:int, node_type:string):
         self.mode = 'sleep'
         self.status = 'undefined'
         self.num_suc = 0
@@ -14,22 +15,27 @@ class P(process):
         self.this_S = {}
         self.result = 'unknown'
         self.parent = self
+        self.message_count= 0
+        self.total_message_count=0
+        self.no_of_nodes=len(all_processors)
         self.replies_received={'cycle':0,'cycle_only':0,'incomplete_search':0,'leaf':0}
 
+
     def initiate():
-        if own_id == initiator:
+        if own_id == initiator_id:
             mode = 'awake'
             num_suc = len(successors)
             # Should we send the process reference or own_id
             send(('Request', self), to=successors)
 
     def receive(msg=('Request', sender)):
-        output('Request', own_id , sep='     ')
+        message_count +=1
+        #output('Request', own_id , sep='     ')
         # Utility function to obtain the marked values
         def bar(i):
             return -1 * i
 
-        if own_id == initiator:
+        if own_id == initiator_id:
             S=set()
             if initiator_sent_cycle_message:
                 S.add(bar(own_id))
@@ -56,9 +62,15 @@ class P(process):
                     num_suc = len(successors)
                     send(('Request', self), to=successors)
 
+    def receive(msg=('message_count', message_count)):
+        total_message_count+=message_count
+        no_of_nodes-=1
+        if no_of_nodes == 1:
+            send(('Terminate_initiator'), to=initiator)
 
     def receive(msg=('Reply', type, sender, S)):
-        output('Reply', type, own_id , S, sep='     ')
+        message_count +=1
+        #output('Reply', type, own_id , S, sep='     ')
         # Utility function to merge the two sets
         def bar(i):
             return -1 * i
@@ -77,7 +89,6 @@ class P(process):
             return U
 
         def type_exor(type1, type2):
-            output(type1, type2)
             if (type2 == 'cycle_only' or type1== 'cycle_only') \
                 or (type1 == 'cycle' and type2 == 'leaf') \
                 or (type2 == 'cycle' and type1 == 'leaf'):
@@ -108,7 +119,7 @@ class P(process):
             unmarked_elements = [i for i in new_set if i > 0]
             marked_elements = [i for i in new_set if i < 0]
 
-            if own_id == initiator:
+            if own_id == initiator_id:
                 #output(status, len(new_set))
                 if status == 'cycle_only':
                     result = 'cycle'
@@ -119,6 +130,8 @@ class P(process):
                 else:
                     result = 'Neither Cycle nor Knot'
                 output('The Initiator node is inside a:', result)
+                if node_type !='Unknown' and node_type!=result:
+                    output('Function Testing failed!!!')
                 send(('Terminate'), to=all_processors)
 
             else:
@@ -160,43 +173,75 @@ class P(process):
     def run():
         initiate()
         await(received(('Terminate')))
+        if own_id == initiator_id:
+            total_message_count+=message_count
+            await(received(('Terminate_initiator')))
+            output('Total no of message:', total_message_count)
+            if total_message_count > 2*no_of_edges:
+                output('Test case failed')
+        else:
+            send(('message_count', message_count), to=initiator)
         #output('Done!!!')
 
-
-'''
 # Alternative main block for scalability experiments
-def main():
-    n = 90 # 90 is the maximum value I can run this code for.
-    # Beyond 90 Error: Too Many Open files. Tried increasing 
-    # the system limit. Got Error: 'Message size too big'
-    # For experimentation we can test for
-    # [10,20,30,40,50,60,70,80,90]
-    mode = 'knot'
 
-    config(channel="fifo")
-    ps = list(new(P, num= n))
-
-    for i, p in enumerate(ps):
-        if mode == 'cycle':
-            successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
-        elif mode == 'knot':
-            if i == len(ps) - 4:
-                successors = [ps[(i+1)], ps[i+2]]
-            elif i == len(ps) - 3:
-                successors = [ps[0]]
-            else:
-                successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
-        setup({p}, (successors,i+1,ps,1))
-    start(ps)
-'''
-
+def create_graph(n):
+    no_of_edges=0
+    successors=[1]*n
+    for i in range(n):
+        k=random.randint(5,n)
+        S=set()
+        for j in range(1,k):
+            l=random.randint(1,k)
+            if i!=l:
+                S.add(l)
+        successors[i]=S
+        no_of_edges+=len(successors[i])
+    return successors, no_of_edges
 
 def main():
-    n = graph_config.test['total_nodes']
     config(channel="fifo")
-    ps = list(new(P, num= n))
+    def Functional_testing_with_rings_and_knots():
+        for n in range(10,500,10):
+            for node_type in ['cycle','knot']:
+                ps = list(new(P, num=n))
+                no_of_edges=0
+                for i, p in enumerate(ps):
+                    if node_type == 'cycle':
+                        successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
+                    elif node_type == 'knot':
+                        if i == len(ps) - 4:
+                            successors = [ps[(i+1)], ps[i+2]]
+                        elif i == len(ps) - 3:
+                            successors = [ps[0]]
+                        else:
+                            successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
+                    no_of_edges+=len(successors)
+                    setup({p}, (successors,i+1,ps,1,ps[0],no_of_edges,node_type))
+                start(ps)
+                output('Total no of Edges:', no_of_edges)
+                
+    def scalability_testing_random_graphs():
+        for N in range(10,100):
+            ps = list(new(P, num=N))
+            initiator_id=1
+            graph, no_of_edges=create_graph(N)
+            output('Total no of Edges:', no_of_edges)
+            #output(graph)
 
-    for i, p in enumerate(ps):
-        successors = [ps[i - 1] for i in graph_config.test['node'+str(i+1)]]
-        setup({p}, (successors,i+1,ps,graph_config.test['initiator']))
-    start(ps)
+            for i, p in enumerate(ps):
+                successors = [ps[i - 1] for i in graph[i]]
+                setup({p}, (successors,i+1,ps,1,ps[0],no_of_edges,'Unknown'))
+            start(ps)
+
+    def Manual_testing():
+        n = graph_config.test['total_nodes']
+        ps = list(new(P, num= n))
+
+        for i, p in enumerate(ps):
+            successors = [ps[i - 1] for i in graph_config.test['node'+str(i+1)]]
+            setup({p}, (successors,i+1,ps,graph_config.test['initiator']))
+        start(ps)
+
+    #scalability_testing_random_graphs()
+    Functional_testing_with_rings_and_knots()
