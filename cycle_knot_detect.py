@@ -45,7 +45,6 @@ class P(da.DistProcess):
             else:
                 super()._label('_st_label_889', block=True)
                 _st_label_889 -= 1
-        self.output('Done!!!')
 
     def initiate(self):
         if (self._state.own_id == self._state.initiator):
@@ -169,6 +168,7 @@ class P(da.DistProcess):
                         self.send(('Reply', 'cycle', self._id, new_set), to=self._state.parent)
     _P_handler_399._labels = None
     _P_handler_399._notlabels = None
+'\n# Alternative main block for scalability experiments\ndef main():\n    n = 90 # 90 is the maximum value I can run this code for.\n    # Beyond 90 Error: Too Many Open files. Tried increasing \n    # the system limit. Got Error: \'Message size too big\'\n    # For experimentation we can test for\n    # [10,20,30,40,50,60,70,80,90]\n    mode = \'knot\'\n\n    config(channel="fifo")\n    ps = list(new(P, num= n))\n\n    for i, p in enumerate(ps):\n        if mode == \'cycle\':\n            successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]\n        elif mode == \'knot\':\n            if i == len(ps) - 4:\n                successors = [ps[(i+1)], ps[i+2]]\n            elif i == len(ps) - 3:\n                successors = [ps[0]]\n            else:\n                successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]\n        setup({p}, (successors,i+1,ps,1))\n    start(ps)\n'
 
 class Node_(da.NodeProcess):
 

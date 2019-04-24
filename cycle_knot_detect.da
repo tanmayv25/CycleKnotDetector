@@ -160,7 +160,36 @@ class P(process):
     def run():
         initiate()
         await(received(('Terminate')))
-        output('Done!!!')
+        #output('Done!!!')
+
+
+'''
+# Alternative main block for scalability experiments
+def main():
+    n = 90 # 90 is the maximum value I can run this code for.
+    # Beyond 90 Error: Too Many Open files. Tried increasing 
+    # the system limit. Got Error: 'Message size too big'
+    # For experimentation we can test for
+    # [10,20,30,40,50,60,70,80,90]
+    mode = 'knot'
+
+    config(channel="fifo")
+    ps = list(new(P, num= n))
+
+    for i, p in enumerate(ps):
+        if mode == 'cycle':
+            successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
+        elif mode == 'knot':
+            if i == len(ps) - 4:
+                successors = [ps[(i+1)], ps[i+2]]
+            elif i == len(ps) - 3:
+                successors = [ps[0]]
+            else:
+                successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
+        setup({p}, (successors,i+1,ps,1))
+    start(ps)
+'''
+
 
 def main():
     n = graph_config.test['total_nodes']
