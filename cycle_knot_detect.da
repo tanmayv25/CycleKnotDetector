@@ -1,6 +1,7 @@
 import sys
 import graph_config
 import random
+import time
 
 class P(process):
     def setup(successors:set, own_id:int, all_processors:set, initiator_id:int, initiator:P, no_of_edges:int, node_type:string):
@@ -178,7 +179,7 @@ class P(process):
             await(received(('Terminate_initiator')))
             output('Total no of message:', total_message_count)
             if total_message_count > 2*no_of_edges:
-                output('Test case failed')
+                output('Test case failed', total_message_count)
         else:
             send(('message_count', message_count), to=initiator)
         #output('Done!!!')
@@ -204,6 +205,7 @@ def main():
     def Functional_testing_with_rings_and_knots():
         for n in range(10,500,10):
             for node_type in ['cycle','knot']:
+                output('Starting............')
                 ps = list(new(P, num=n))
                 no_of_edges=0
                 for i, p in enumerate(ps):
@@ -218,8 +220,14 @@ def main():
                             successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
                     no_of_edges+=len(successors)
                     setup({p}, (successors,i+1,ps,1,ps[0],no_of_edges,node_type))
+                t0 = time.time()
                 start(ps)
+                t1 = time.time()
+                output('Type: ', node_type)
+                output('Number of nodes: ', n)
+                output('Total Simulation Time:', t1-t0)
                 output('Total no of Edges:', no_of_edges)
+                output('Ending............')
                 
     def scalability_testing_random_graphs():
         for N in range(10,100):
@@ -232,7 +240,10 @@ def main():
             for i, p in enumerate(ps):
                 successors = [ps[i - 1] for i in graph[i]]
                 setup({p}, (successors,i+1,ps,1,ps[0],no_of_edges,'Unknown'))
+            t0 = time.time()
             start(ps)
+            t1 = time.time()
+            output('Total Simulation Time:', t1-t0)
 
     def Manual_testing():
         n = graph_config.test['total_nodes']
@@ -241,7 +252,10 @@ def main():
         for i, p in enumerate(ps):
             successors = [ps[i - 1] for i in graph_config.test['node'+str(i+1)]]
             setup({p}, (successors,i+1,ps,graph_config.test['initiator']))
+        t0 = time.time()
         start(ps)
+        t1 = time.time()
+        output('Total Simulation Time:', t1-t0)
 
     #scalability_testing_random_graphs()
     Functional_testing_with_rings_and_knots()
