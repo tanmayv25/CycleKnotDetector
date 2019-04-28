@@ -1,1029 +1,463 @@
-[2019-04-24 12:05:34,387] da.api<MainProcess>:INFO: <Node_:5e801> initialized at 127.0.0.1:(UdpTransport=17140, TcpTransport=26344).
-[2019-04-24 12:05:34,388] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 12:05:34,388] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 12:05:34,389] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 12:05:34,522] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 43
-[2019-04-24 12:05:34,542] cycle_knot_detect.P<P:edc05>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:34,546] cycle_knot_detect.P<P:edc05>:OUTPUT: Total no of message: 66
-[2019-04-24 12:05:34,679] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 50
-[2019-04-24 12:05:34,708] cycle_knot_detect.P<P:edc14>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:34,712] cycle_knot_detect.P<P:edc14>:OUTPUT: Total no of message: 100
-[2019-04-24 12:05:34,863] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 63
-[2019-04-24 12:05:34,897] cycle_knot_detect.P<P:edc1e>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:34,904] cycle_knot_detect.P<P:edc1e>:OUTPUT: Total no of message: 126
-[2019-04-24 12:05:35,062] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 64
-[2019-04-24 12:05:35,101] cycle_knot_detect.P<P:edc25>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:35,106] cycle_knot_detect.P<P:edc25>:OUTPUT: Total no of message: 128
-[2019-04-24 12:05:35,273] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 78
-[2019-04-24 12:05:35,317] cycle_knot_detect.P<P:edc34>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:35,322] cycle_knot_detect.P<P:edc34>:OUTPUT: Total no of message: 156
-[2019-04-24 12:05:35,511] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 77
-[2019-04-24 12:05:35,559] cycle_knot_detect.P<P:edc45>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:35,565] cycle_knot_detect.P<P:edc45>:OUTPUT: Total no of message: 154
-[2019-04-24 12:05:35,768] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 98
-[2019-04-24 12:05:35,819] cycle_knot_detect.P<P:edc54>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:35,826] cycle_knot_detect.P<P:edc54>:OUTPUT: Total no of message: 196
-[2019-04-24 12:05:36,030] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 110
-[2019-04-24 12:05:36,081] cycle_knot_detect.P<P:edc65>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:36,087] cycle_knot_detect.P<P:edc65>:OUTPUT: Total no of message: 192
-[2019-04-24 12:05:36,307] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 114
-[2019-04-24 12:05:36,362] cycle_knot_detect.P<P:edc74>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:36,374] cycle_knot_detect.P<P:edc74>:OUTPUT: Total no of message: 194
-[2019-04-24 12:05:36,606] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 120
-[2019-04-24 12:05:36,662] cycle_knot_detect.P<P:edc85>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:36,675] cycle_knot_detect.P<P:edc85>:OUTPUT: Total no of message: 204
-[2019-04-24 12:05:36,912] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 132
-[2019-04-24 12:05:36,991] cycle_knot_detect.P<P:edca5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:36,998] cycle_knot_detect.P<P:edca5>:OUTPUT: Total no of message: 264
-[2019-04-24 12:05:37,254] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 166
-[2019-04-24 12:05:37,340] cycle_knot_detect.P<P:edcaf>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:37,349] cycle_knot_detect.P<P:edcaf>:OUTPUT: Total no of message: 310
-[2019-04-24 12:05:37,620] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 196
-[2019-04-24 12:05:37,714] cycle_knot_detect.P<P:edcc5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:37,721] cycle_knot_detect.P<P:edcc5>:OUTPUT: Total no of message: 382
-[2019-04-24 12:05:38,019] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 235
-[2019-04-24 12:05:38,134] cycle_knot_detect.P<P:edce8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:38,142] cycle_knot_detect.P<P:edce8>:OUTPUT: Total no of message: 470
-[2019-04-24 12:05:38,445] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 239
-[2019-04-24 12:05:38,562] cycle_knot_detect.P<P:edcfe>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:38,571] cycle_knot_detect.P<P:edcfe>:OUTPUT: Total no of message: 478
-[2019-04-24 12:05:38,884] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 222
-[2019-04-24 12:05:39,006] cycle_knot_detect.P<P:edd14>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:39,017] cycle_knot_detect.P<P:edd14>:OUTPUT: Total no of message: 444
-[2019-04-24 12:05:39,353] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 245
-[2019-04-24 12:05:39,472] cycle_knot_detect.P<P:edd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:39,482] cycle_knot_detect.P<P:edd2f>:OUTPUT: Total no of message: 490
-[2019-04-24 12:05:39,817] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 284
-[2019-04-24 12:05:39,937] cycle_knot_detect.P<P:edd45>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:39,947] cycle_knot_detect.P<P:edd45>:OUTPUT: Total no of message: 524
-[2019-04-24 12:05:40,293] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 268
-[2019-04-24 12:05:40,412] cycle_knot_detect.P<P:edd68>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:40,422] cycle_knot_detect.P<P:edd68>:OUTPUT: Total no of message: 508
-[2019-04-24 12:05:40,787] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 320
-[2019-04-24 12:05:40,931] cycle_knot_detect.P<P:edd7e>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:40,941] cycle_knot_detect.P<P:edd7e>:OUTPUT: Total no of message: 640
-[2019-04-24 12:05:41,313] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 340
-[2019-04-24 12:05:41,464] cycle_knot_detect.P<P:edd94>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:41,474] cycle_knot_detect.P<P:edd94>:OUTPUT: Total no of message: 670
-[2019-04-24 12:05:41,865] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 346
-[2019-04-24 12:05:42,022] cycle_knot_detect.P<P:eddaf>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:42,034] cycle_knot_detect.P<P:eddaf>:OUTPUT: Total no of message: 682
-[2019-04-24 12:05:42,426] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 324
-[2019-04-24 12:05:42,581] cycle_knot_detect.P<P:eddc5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:42,592] cycle_knot_detect.P<P:eddc5>:OUTPUT: Total no of message: 642
-[2019-04-24 12:05:43,006] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 400
-[2019-04-24 12:05:43,182] cycle_knot_detect.P<P:eddfe>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:43,194] cycle_knot_detect.P<P:eddfe>:OUTPUT: Total no of message: 800
-[2019-04-24 12:05:43,595] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 345
-[2019-04-24 12:05:44,228] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 377
-[2019-04-24 12:05:44,424] cycle_knot_detect.P<P:ede45>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:44,439] cycle_knot_detect.P<P:ede45>:OUTPUT: Total no of message: 718
-[2019-04-24 12:05:44,875] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 478
-[2019-04-24 12:05:45,097] cycle_knot_detect.P<P:ede68>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:45,110] cycle_knot_detect.P<P:ede68>:OUTPUT: Total no of message: 948
-[2019-04-24 12:05:45,562] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 474
-[2019-04-24 12:05:45,809] cycle_knot_detect.P<P:ede7e>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:45,823] cycle_knot_detect.P<P:ede7e>:OUTPUT: Total no of message: 914
-[2019-04-24 12:05:46,303] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 442
-[2019-04-24 12:05:46,484] cycle_knot_detect.P<P:ede94>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:46,497] cycle_knot_detect.P<P:ede94>:OUTPUT: Total no of message: 776
-[2019-04-24 12:05:46,976] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 529
-[2019-04-24 12:05:47,183] cycle_knot_detect.P<P:edec5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:47,197] cycle_knot_detect.P<P:edec5>:OUTPUT: Total no of message: 948
-[2019-04-24 12:05:47,714] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 501
-[2019-04-24 12:05:47,924] cycle_knot_detect.P<P:edefe>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:47,938] cycle_knot_detect.P<P:edefe>:OUTPUT: Total no of message: 978
-[2019-04-24 12:05:48,448] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 590
-[2019-04-24 12:05:48,706] cycle_knot_detect.P<P:edf14>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:48,721] cycle_knot_detect.P<P:edf14>:OUTPUT: Total no of message: 1180
-[2019-04-24 12:05:49,259] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 616
-[2019-04-24 12:05:49,508] cycle_knot_detect.P<P:edf45>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:49,523] cycle_knot_detect.P<P:edf45>:OUTPUT: Total no of message: 1184
-[2019-04-24 12:05:50,062] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 584
-[2019-04-24 12:05:50,307] cycle_knot_detect.P<P:edf7e>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:50,323] cycle_knot_detect.P<P:edf7e>:OUTPUT: Total no of message: 1168
-[2019-04-24 12:05:50,868] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 608
-[2019-04-24 12:05:51,115] cycle_knot_detect.P<P:edf94>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:51,131] cycle_knot_detect.P<P:edf94>:OUTPUT: Total no of message: 1144
-[2019-04-24 12:05:51,702] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 526
-[2019-04-24 12:05:51,924] cycle_knot_detect.P<P:edfc5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:51,940] cycle_knot_detect.P<P:edfc5>:OUTPUT: Total no of message: 1006
-[2019-04-24 12:05:52,535] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 658
-[2019-04-24 12:05:52,820] cycle_knot_detect.P<P:edffe>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:52,837] cycle_knot_detect.P<P:edffe>:OUTPUT: Total no of message: 1298
-[2019-04-24 12:05:53,457] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 761
-[2019-04-24 12:05:53,765] cycle_knot_detect.P<P:edc14>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:53,782] cycle_knot_detect.P<P:edc14>:OUTPUT: Total no of message: 1484
-[2019-04-24 12:05:54,367] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 742
-[2019-04-24 12:05:54,685] cycle_knot_detect.P<P:edc45>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:54,702] cycle_knot_detect.P<P:edc45>:OUTPUT: Total no of message: 1470
-[2019-04-24 12:05:55,331] cycle_knot_detect.Node_<Node_:5e801>:OUTPUT: Total no of Edges: 789
-[2019-04-24 12:05:55,644] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 12:05:55,664] cycle_knot_detect.P<P:edc94>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:05:55,683] cycle_knot_detect.P<P:edc94>:OUTPUT: Total no of message: 1578
-[2019-04-24 12:06:23,793] da.api<MainProcess>:INFO: <Node_:9dc01> initialized at 127.0.0.1:(UdpTransport=31144, TcpTransport=15982).
-[2019-04-24 12:06:23,794] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 12:06:23,794] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 12:06:23,794] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 12:06:23,924] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 47
-[2019-04-24 12:06:23,950] cycle_knot_detect.P<P:df40b>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:23,954] cycle_knot_detect.P<P:df40b>:OUTPUT: Total no of message: 94
-[2019-04-24 12:06:24,092] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 45
-[2019-04-24 12:06:24,120] cycle_knot_detect.P<P:df40c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:24,125] cycle_knot_detect.P<P:df40c>:OUTPUT: Total no of message: 84
-[2019-04-24 12:06:24,278] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 65
-[2019-04-24 12:06:24,311] cycle_knot_detect.P<P:df41a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:24,319] cycle_knot_detect.P<P:df41a>:OUTPUT: Total no of message: 130
-[2019-04-24 12:06:24,476] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 67
-[2019-04-24 12:06:24,623] cycle_knot_detect.P<P:df42c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:24,630] cycle_knot_detect.P<P:df42c>:OUTPUT: Total no of message: 134
-[2019-04-24 12:06:24,802] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 71
-[2019-04-24 12:06:24,840] cycle_knot_detect.P<P:df43a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:24,846] cycle_knot_detect.P<P:df43a>:OUTPUT: Total no of message: 142
-[2019-04-24 12:06:25,027] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 80
-[2019-04-24 12:06:25,066] cycle_knot_detect.P<P:df44c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:25,072] cycle_knot_detect.P<P:df44c>:OUTPUT: Total no of message: 144
-[2019-04-24 12:06:25,276] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 88
-[2019-04-24 12:06:25,326] cycle_knot_detect.P<P:df45a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:25,334] cycle_knot_detect.P<P:df45a>:OUTPUT: Total no of message: 160
-[2019-04-24 12:06:25,552] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 99
-[2019-04-24 12:06:25,615] cycle_knot_detect.P<P:df46c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:25,624] cycle_knot_detect.P<P:df46c>:OUTPUT: Total no of message: 182
-[2019-04-24 12:06:25,850] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 119
-[2019-04-24 12:06:25,911] cycle_knot_detect.P<P:df47a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:25,919] cycle_knot_detect.P<P:df47a>:OUTPUT: Total no of message: 238
-[2019-04-24 12:06:26,158] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 150
-[2019-04-24 12:06:26,231] cycle_knot_detect.P<P:df48c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:26,238] cycle_knot_detect.P<P:df48c>:OUTPUT: Total no of message: 286
-[2019-04-24 12:06:26,489] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 149
-[2019-04-24 12:06:26,567] cycle_knot_detect.P<P:df49a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:26,575] cycle_knot_detect.P<P:df49a>:OUTPUT: Total no of message: 280
-[2019-04-24 12:06:26,836] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 180
-[2019-04-24 12:06:26,923] cycle_knot_detect.P<P:df4ba>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:26,930] cycle_knot_detect.P<P:df4ba>:OUTPUT: Total no of message: 360
-[2019-04-24 12:06:27,210] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 180
-[2019-04-24 12:06:27,300] cycle_knot_detect.P<P:df4cc>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:27,308] cycle_knot_detect.P<P:df4cc>:OUTPUT: Total no of message: 360
-[2019-04-24 12:06:27,598] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 189
-[2019-04-24 12:06:27,693] cycle_knot_detect.P<P:df4dc>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:27,702] cycle_knot_detect.P<P:df4dc>:OUTPUT: Total no of message: 378
-[2019-04-24 12:06:27,996] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 202
-[2019-04-24 12:06:28,092] cycle_knot_detect.P<P:df4f9>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:28,101] cycle_knot_detect.P<P:df4f9>:OUTPUT: Total no of message: 380
-[2019-04-24 12:06:28,418] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 214
-[2019-04-24 12:06:28,519] cycle_knot_detect.P<P:df50f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:28,543] cycle_knot_detect.P<P:df50f>:OUTPUT: Total no of message: 414
-[2019-04-24 12:06:28,873] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 212
-[2019-04-24 12:06:28,973] cycle_knot_detect.P<P:df524>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:28,982] cycle_knot_detect.P<P:df524>:OUTPUT: Total no of message: 406
-[2019-04-24 12:06:29,320] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 257
-[2019-04-24 12:06:29,441] cycle_knot_detect.P<P:df54c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:29,451] cycle_knot_detect.P<P:df54c>:OUTPUT: Total no of message: 502
-[2019-04-24 12:06:29,804] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 324
-[2019-04-24 12:06:29,946] cycle_knot_detect.P<P:df550>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:29,956] cycle_knot_detect.P<P:df550>:OUTPUT: Total no of message: 626
-[2019-04-24 12:06:30,320] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 284
-[2019-04-24 12:06:30,449] cycle_knot_detect.P<P:df579>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:30,460] cycle_knot_detect.P<P:df579>:OUTPUT: Total no of message: 544
-[2019-04-24 12:06:30,832] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 300
-[2019-04-24 12:06:30,959] cycle_knot_detect.P<P:df58f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:30,969] cycle_knot_detect.P<P:df58f>:OUTPUT: Total no of message: 534
-[2019-04-24 12:06:31,350] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 310
-[2019-04-24 12:06:31,510] cycle_knot_detect.P<P:df5ba>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:31,521] cycle_knot_detect.P<P:df5ba>:OUTPUT: Total no of message: 614
-[2019-04-24 12:06:31,932] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 371
-[2019-04-24 12:06:32,110] cycle_knot_detect.P<P:df5cc>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:32,121] cycle_knot_detect.P<P:df5cc>:OUTPUT: Total no of message: 708
-[2019-04-24 12:06:32,547] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 370
-[2019-04-24 12:06:32,708] cycle_knot_detect.P<P:df5f9>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:32,720] cycle_knot_detect.P<P:df5f9>:OUTPUT: Total no of message: 692
-[2019-04-24 12:06:33,142] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 483
-[2019-04-24 12:06:33,335] cycle_knot_detect.P<P:df60f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:33,347] cycle_knot_detect.P<P:df60f>:OUTPUT: Total no of message: 918
-[2019-04-24 12:06:33,782] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 434
-[2019-04-24 12:06:33,969] cycle_knot_detect.P<P:df63a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:33,980] cycle_knot_detect.P<P:df63a>:OUTPUT: Total no of message: 868
-[2019-04-24 12:06:34,437] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 393
-[2019-04-24 12:06:34,612] cycle_knot_detect.P<P:df64c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:34,624] cycle_knot_detect.P<P:df64c>:OUTPUT: Total no of message: 754
-[2019-04-24 12:06:35,092] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 428
-[2019-04-24 12:06:35,263] cycle_knot_detect.P<P:df679>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:35,279] cycle_knot_detect.P<P:df679>:OUTPUT: Total no of message: 778
-[2019-04-24 12:06:35,767] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 515
-[2019-04-24 12:06:35,981] cycle_knot_detect.P<P:df6a4>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:35,994] cycle_knot_detect.P<P:df6a4>:OUTPUT: Total no of message: 994
-[2019-04-24 12:06:36,492] cycle_knot_detect.Node_<Node_:9dc01>:OUTPUT: Total no of Edges: 511
-[2019-04-24 12:06:36,688] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 12:06:36,713] cycle_knot_detect.P<P:df6cc>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:06:36,730] cycle_knot_detect.P<P:df6cc>:OUTPUT: Total no of message: 1022
-[2019-04-24 12:07:40,426] da.api<MainProcess>:INFO: <Node_:cf801> initialized at 127.0.0.1:(UdpTransport=15279, TcpTransport=28388).
-[2019-04-24 12:07:40,426] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 12:07:40,427] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 12:07:40,428] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 12:07:40,560] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 40
-[2019-04-24 12:07:40,580] cycle_knot_detect.P<P:8ec07>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:40,584] cycle_knot_detect.P<P:8ec07>:OUTPUT: Total no of message: 72
-[2019-04-24 12:07:40,715] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 44
-[2019-04-24 12:07:40,740] cycle_knot_detect.P<P:8ec10>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:40,744] cycle_knot_detect.P<P:8ec10>:OUTPUT: Total no of message: 88
-[2019-04-24 12:07:40,886] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 61
-[2019-04-24 12:07:40,917] cycle_knot_detect.P<P:8ec19>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:40,923] cycle_knot_detect.P<P:8ec19>:OUTPUT: Total no of message: 122
-[2019-04-24 12:07:41,081] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 76
-[2019-04-24 12:07:41,119] cycle_knot_detect.P<P:8ec27>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:41,124] cycle_knot_detect.P<P:8ec27>:OUTPUT: Total no of message: 142
-[2019-04-24 12:07:41,293] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 73
-[2019-04-24 12:07:41,343] cycle_knot_detect.P<P:8ec30>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:41,348] cycle_knot_detect.P<P:8ec30>:OUTPUT: Total no of message: 146
-[2019-04-24 12:07:41,531] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 79
-[2019-04-24 12:07:41,573] cycle_knot_detect.P<P:8ec47>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:41,578] cycle_knot_detect.P<P:8ec47>:OUTPUT: Total no of message: 152
-[2019-04-24 12:07:41,769] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 90
-[2019-04-24 12:07:41,817] cycle_knot_detect.P<P:8ec50>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:41,824] cycle_knot_detect.P<P:8ec50>:OUTPUT: Total no of message: 174
-[2019-04-24 12:07:42,024] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 110
-[2019-04-24 12:07:42,082] cycle_knot_detect.P<P:8ec67>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:42,089] cycle_knot_detect.P<P:8ec67>:OUTPUT: Total no of message: 220
-[2019-04-24 12:07:42,303] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 122
-[2019-04-24 12:07:42,366] cycle_knot_detect.P<P:8ec70>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:42,376] cycle_knot_detect.P<P:8ec70>:OUTPUT: Total no of message: 244
-[2019-04-24 12:07:42,604] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 142
-[2019-04-24 12:07:42,674] cycle_knot_detect.P<P:8ec90>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:42,681] cycle_knot_detect.P<P:8ec90>:OUTPUT: Total no of message: 268
-[2019-04-24 12:07:42,909] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 111
-[2019-04-24 12:07:42,966] cycle_knot_detect.P<P:8ec99>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:42,977] cycle_knot_detect.P<P:8ec99>:OUTPUT: Total no of message: 214
-[2019-04-24 12:07:43,226] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 162
-[2019-04-24 12:07:43,307] cycle_knot_detect.P<P:8ecb3>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:43,314] cycle_knot_detect.P<P:8ecb3>:OUTPUT: Total no of message: 318
-[2019-04-24 12:07:43,581] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 187
-[2019-04-24 12:07:43,675] cycle_knot_detect.P<P:8ecca>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:43,683] cycle_knot_detect.P<P:8ecca>:OUTPUT: Total no of message: 374
-[2019-04-24 12:07:43,960] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 190
-[2019-04-24 12:07:44,058] cycle_knot_detect.P<P:8ece8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:44,068] cycle_knot_detect.P<P:8ece8>:OUTPUT: Total no of message: 380
-[2019-04-24 12:07:44,344] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 187
-[2019-04-24 12:07:44,426] cycle_knot_detect.P<P:8ecf9>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 12:07:44,434] cycle_knot_detect.P<P:8ecf9>:OUTPUT: Total no of message: 322
-[2019-04-24 12:07:44,731] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 232
-[2019-04-24 12:07:44,835] cycle_knot_detect.P<P:8ed10>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:44,845] cycle_knot_detect.P<P:8ed10>:OUTPUT: Total no of message: 426
-[2019-04-24 12:07:45,164] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 210
-[2019-04-24 12:07:45,251] cycle_knot_detect.P<P:8ed33>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:45,260] cycle_knot_detect.P<P:8ed33>:OUTPUT: Total no of message: 352
-[2019-04-24 12:07:45,594] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 250
-[2019-04-24 12:07:45,716] cycle_knot_detect.P<P:8ed4a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:45,725] cycle_knot_detect.P<P:8ed4a>:OUTPUT: Total no of message: 486
-[2019-04-24 12:07:46,067] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 276
-[2019-04-24 12:07:46,194] cycle_knot_detect.P<P:8ed68>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:46,204] cycle_knot_detect.P<P:8ed68>:OUTPUT: Total no of message: 552
-[2019-04-24 12:07:46,552] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 327
-[2019-04-24 12:07:46,695] cycle_knot_detect.P<P:8ed87>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:46,706] cycle_knot_detect.P<P:8ed87>:OUTPUT: Total no of message: 624
-[2019-04-24 12:07:47,058] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 281
-[2019-04-24 12:07:47,187] cycle_knot_detect.P<P:8ed90>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:47,197] cycle_knot_detect.P<P:8ed90>:OUTPUT: Total no of message: 522
-[2019-04-24 12:07:47,576] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 295
-[2019-04-24 12:07:47,718] cycle_knot_detect.P<P:8edb3>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:47,729] cycle_knot_detect.P<P:8edb3>:OUTPUT: Total no of message: 590
-[2019-04-24 12:07:48,122] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 366
-[2019-04-24 12:07:48,283] cycle_knot_detect.P<P:8edca>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:48,295] cycle_knot_detect.P<P:8edca>:OUTPUT: Total no of message: 716
-[2019-04-24 12:07:48,701] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 453
-[2019-04-24 12:07:48,894] cycle_knot_detect.P<P:8edf9>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:48,907] cycle_knot_detect.P<P:8edf9>:OUTPUT: Total no of message: 906
-[2019-04-24 12:07:49,316] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 464
-[2019-04-24 12:07:49,512] cycle_knot_detect.P<P:8ee10>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:49,525] cycle_knot_detect.P<P:8ee10>:OUTPUT: Total no of message: 928
-[2019-04-24 12:07:49,937] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 398
-[2019-04-24 12:07:50,114] cycle_knot_detect.P<P:8ee4a>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:50,126] cycle_knot_detect.P<P:8ee4a>:OUTPUT: Total no of message: 796
-[2019-04-24 12:07:50,557] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 486
-[2019-04-24 12:07:50,764] cycle_knot_detect.P<P:8ee4c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:50,777] cycle_knot_detect.P<P:8ee4c>:OUTPUT: Total no of message: 972
-[2019-04-24 12:07:51,219] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 433
-[2019-04-24 12:07:51,394] cycle_knot_detect.P<P:8ee90>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:51,407] cycle_knot_detect.P<P:8ee90>:OUTPUT: Total no of message: 754
-[2019-04-24 12:07:51,868] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 425
-[2019-04-24 12:07:52,048] cycle_knot_detect.P<P:8eeb3>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:52,061] cycle_knot_detect.P<P:8eeb3>:OUTPUT: Total no of message: 806
-[2019-04-24 12:07:52,537] cycle_knot_detect.Node_<Node_:cf801>:OUTPUT: Total no of Edges: 569
-[2019-04-24 12:07:52,767] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 12:07:52,784] cycle_knot_detect.P<P:8eeca>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 12:07:52,798] cycle_knot_detect.P<P:8eeca>:OUTPUT: Total no of message: 1138
-[2019-04-24 12:54:55,315] da.api<MainProcess>:INFO: <Node_:af401> initialized at 127.0.0.1:(UdpTransport=26317, TcpTransport=30789).
-[2019-04-24 12:54:55,316] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 12:54:55,316] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 12:54:55,317] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 12:54:55,319] cycle_knot_detect.Node_<Node_:af401>:ERROR: Unrecoverable error in node process: NameError("name 'self' is not defined",)
-Traceback (most recent call last):
-  File "/Users/mohammedhabibullahbaig/Library/Python/3.6/lib/python/site-packages/da/sim.py", line 983, in _delayed_start
-    return self.run()
-  File "/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py", line 269, in run
-    Functional_testing_with_rings_and_knots()
-  File "/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py", line 211, in Functional_testing_with_rings_and_knots
-    ps = list(self.new(P, num=n))
-NameError: name 'self' is not defined
-[2019-04-24 12:54:55,322] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 12:57:19,377] da.api<MainProcess>:INFO: <Node_:aac01> initialized at 127.0.0.1:(UdpTransport=17157, TcpTransport=15960).
-[2019-04-24 12:57:19,378] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 12:57:19,378] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 12:57:19,380] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 12:57:19,382] cycle_knot_detect.Node_<Node_:aac01>:ERROR: Unrecoverable error in node process: NameError("name 'self' is not defined",)
-Traceback (most recent call last):
-  File "/Users/mohammedhabibullahbaig/Library/Python/3.6/lib/python/site-packages/da/sim.py", line 983, in _delayed_start
-    return self.run()
-  File "/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py", line 269, in run
-    scalability_testing_random_graphs()
-  File "/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py", line 244, in scalability_testing_random_graphs
-    ps = list(self.new(P, num=N))
-NameError: name 'self' is not defined
-[2019-04-24 12:57:19,388] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 12:59:09,133] da.api<MainProcess>:INFO: <Node_:ae801> initialized at 127.0.0.1:(UdpTransport=13018, TcpTransport=26532).
-[2019-04-24 12:59:09,133] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 12:59:09,134] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 12:59:09,134] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 12:59:09,136] cycle_knot_detect.Node_<Node_:ae801>:ERROR: Unrecoverable error in node process: NameError("name 'self' is not defined",)
-Traceback (most recent call last):
-  File "/Users/mohammedhabibullahbaig/Library/Python/3.6/lib/python/site-packages/da/sim.py", line 983, in _delayed_start
-    return self.run()
-  File "/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py", line 269, in run
-    scalability_testing_random_graphs()
-  File "/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py", line 244, in scalability_testing_random_graphs
-    ps = list(self.new(P, num=N))
-NameError: name 'self' is not defined
-[2019-04-24 12:59:09,138] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 13:12:44,981] da.api<MainProcess>:INFO: <Node_:fc801> initialized at 127.0.0.1:(UdpTransport=23849, TcpTransport=16994).
-[2019-04-24 13:12:44,982] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 13:12:44,982] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 13:12:44,983] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 13:12:44,985] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 13:13:32,737] da.api<MainProcess>:INFO: <Node_:edc01> initialized at 127.0.0.1:(UdpTransport=31686, TcpTransport=35419).
-[2019-04-24 13:13:32,737] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 13:13:32,738] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 13:13:32,739] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 13:13:32,740] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 13:13:47,563] da.api<MainProcess>:INFO: <Node_:9ec01> initialized at 127.0.0.1:(UdpTransport=11001, TcpTransport=15175).
-[2019-04-24 13:13:47,564] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 13:13:47,564] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 13:13:47,565] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 13:13:47,693] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 36
-[2019-04-24 13:13:47,713] cycle_knot_detect.P<P:e4405>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:47,717] cycle_knot_detect.P<P:e4405>:OUTPUT: Total no of message: 58
-[2019-04-24 13:13:47,851] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 43
-[2019-04-24 13:13:47,873] cycle_knot_detect.P<P:e4411>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:47,877] cycle_knot_detect.P<P:e4411>:OUTPUT: Total no of message: 70
-[2019-04-24 13:13:48,015] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 55
-[2019-04-24 13:13:48,045] cycle_knot_detect.P<P:e4418>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:48,051] cycle_knot_detect.P<P:e4418>:OUTPUT: Total no of message: 96
-[2019-04-24 13:13:48,204] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 71
-[2019-04-24 13:13:48,245] cycle_knot_detect.P<P:e4425>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:48,250] cycle_knot_detect.P<P:e4425>:OUTPUT: Total no of message: 142
-[2019-04-24 13:13:48,423] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 61
-[2019-04-24 13:13:48,454] cycle_knot_detect.P<P:e4438>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:48,462] cycle_knot_detect.P<P:e4438>:OUTPUT: Total no of message: 98
-[2019-04-24 13:13:48,650] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 78
-[2019-04-24 13:13:48,695] cycle_knot_detect.P<P:e4445>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:48,701] cycle_knot_detect.P<P:e4445>:OUTPUT: Total no of message: 148
-[2019-04-24 13:13:48,897] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 88
-[2019-04-24 13:13:48,940] cycle_knot_detect.P<P:e4458>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:48,947] cycle_knot_detect.P<P:e4458>:OUTPUT: Total no of message: 150
-[2019-04-24 13:13:49,158] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 100
-[2019-04-24 13:13:49,217] cycle_knot_detect.P<P:e4465>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:49,229] cycle_knot_detect.P<P:e4465>:OUTPUT: Total no of message: 192
-[2019-04-24 13:13:49,442] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 112
-[2019-04-24 13:13:49,510] cycle_knot_detect.P<P:e4478>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:49,517] cycle_knot_detect.P<P:e4478>:OUTPUT: Total no of message: 216
-[2019-04-24 13:13:49,750] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 129
-[2019-04-24 13:13:49,814] cycle_knot_detect.P<P:e4485>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:49,827] cycle_knot_detect.P<P:e4485>:OUTPUT: Total no of message: 232
-[2019-04-24 13:13:50,064] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 152
-[2019-04-24 13:13:50,148] cycle_knot_detect.P<P:e44a5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:50,158] cycle_knot_detect.P<P:e44a5>:OUTPUT: Total no of message: 304
-[2019-04-24 13:13:50,398] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 183
-[2019-04-24 13:13:50,489] cycle_knot_detect.P<P:e44ae>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:50,498] cycle_knot_detect.P<P:e44ae>:OUTPUT: Total no of message: 366
-[2019-04-24 13:13:50,758] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 168
-[2019-04-24 13:13:50,845] cycle_knot_detect.P<P:e44c5>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:13:50,853] cycle_knot_detect.P<P:e44c5>:OUTPUT: Total no of message: 314
-[2019-04-24 13:13:51,131] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 168
-[2019-04-24 13:13:51,221] cycle_knot_detect.P<P:e44d8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:51,234] cycle_knot_detect.P<P:e44d8>:OUTPUT: Total no of message: 294
-[2019-04-24 13:13:51,529] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 221
-[2019-04-24 13:13:51,647] cycle_knot_detect.P<P:e44ff>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:51,655] cycle_knot_detect.P<P:e44ff>:OUTPUT: Total no of message: 418
-[2019-04-24 13:13:51,961] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 234
-[2019-04-24 13:13:52,063] cycle_knot_detect.P<P:e4517>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:52,072] cycle_knot_detect.P<P:e4517>:OUTPUT: Total no of message: 392
-[2019-04-24 13:13:52,377] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 247
-[2019-04-24 13:13:52,499] cycle_knot_detect.P<P:e4526>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:13:52,510] cycle_knot_detect.P<P:e4526>:OUTPUT: Total no of message: 446
-[2019-04-24 13:13:52,825] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 232
-[2019-04-24 13:13:52,930] cycle_knot_detect.P<P:e4545>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:52,940] cycle_knot_detect.P<P:e4545>:OUTPUT: Total no of message: 402
-[2019-04-24 13:13:53,279] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 255
-[2019-04-24 13:13:53,408] cycle_knot_detect.P<P:e4558>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:53,420] cycle_knot_detect.P<P:e4558>:OUTPUT: Total no of message: 510
-[2019-04-24 13:13:53,780] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 333
-[2019-04-24 13:13:53,937] cycle_knot_detect.P<P:e4583>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:53,947] cycle_knot_detect.P<P:e4583>:OUTPUT: Total no of message: 644
-[2019-04-24 13:13:54,316] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 317
-[2019-04-24 13:13:54,482] cycle_knot_detect.P<P:e4597>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:54,493] cycle_knot_detect.P<P:e4597>:OUTPUT: Total no of message: 634
-[2019-04-24 13:13:54,881] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 375
-[2019-04-24 13:13:55,043] cycle_knot_detect.P<P:e45a6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:55,055] cycle_knot_detect.P<P:e45a6>:OUTPUT: Total no of message: 690
-[2019-04-24 13:13:55,426] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 361
-[2019-04-24 13:13:55,603] cycle_knot_detect.P<P:e45c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:55,615] cycle_knot_detect.P<P:e45c5>:OUTPUT: Total no of message: 722
-[2019-04-24 13:13:56,019] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 418
-[2019-04-24 13:13:56,211] cycle_knot_detect.P<P:e4603>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:56,224] cycle_knot_detect.P<P:e4603>:OUTPUT: Total no of message: 836
-[2019-04-24 13:13:56,639] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 347
-[2019-04-24 13:13:56,807] cycle_knot_detect.P<P:e4617>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:56,820] cycle_knot_detect.P<P:e4617>:OUTPUT: Total no of message: 686
-[2019-04-24 13:13:57,241] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 367
-[2019-04-24 13:13:57,422] cycle_knot_detect.P<P:e4645>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:57,435] cycle_knot_detect.P<P:e4645>:OUTPUT: Total no of message: 734
-[2019-04-24 13:13:57,855] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 426
-[2019-04-24 13:13:58,054] cycle_knot_detect.P<P:e4658>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:58,069] cycle_knot_detect.P<P:e4658>:OUTPUT: Total no of message: 852
-[2019-04-24 13:13:58,545] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 468
-[2019-04-24 13:13:58,747] cycle_knot_detect.P<P:e4691>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:58,761] cycle_knot_detect.P<P:e4691>:OUTPUT: Total no of message: 852
-[2019-04-24 13:13:59,230] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 454
-[2019-04-24 13:13:59,438] cycle_knot_detect.P<P:e4697>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:13:59,453] cycle_knot_detect.P<P:e4697>:OUTPUT: Total no of message: 828
-[2019-04-24 13:13:59,913] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 505
-[2019-04-24 13:14:00,131] cycle_knot_detect.P<P:e46c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:00,153] cycle_knot_detect.P<P:e46c5>:OUTPUT: Total no of message: 932
-[2019-04-24 13:14:00,610] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 571
-[2019-04-24 13:14:00,874] cycle_knot_detect.P<P:e4703>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:00,897] cycle_knot_detect.P<P:e4703>:OUTPUT: Total no of message: 1106
-[2019-04-24 13:14:01,401] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 577
-[2019-04-24 13:14:01,663] cycle_knot_detect.P<P:e4717>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:01,679] cycle_knot_detect.P<P:e4717>:OUTPUT: Total no of message: 1136
-[2019-04-24 13:14:02,189] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 673
-[2019-04-24 13:14:02,508] cycle_knot_detect.P<P:e4745>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:02,525] cycle_knot_detect.P<P:e4745>:OUTPUT: Total no of message: 1308
-[2019-04-24 13:14:03,064] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 582
-[2019-04-24 13:14:03,311] cycle_knot_detect.P<P:e4783>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:03,334] cycle_knot_detect.P<P:e4783>:OUTPUT: Total no of message: 1086
-[2019-04-24 13:14:03,855] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 550
-[2019-04-24 13:14:04,129] cycle_knot_detect.P<P:e4797>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:04,156] cycle_knot_detect.P<P:e4797>:OUTPUT: Total no of message: 1096
-[2019-04-24 13:14:04,762] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 728
-[2019-04-24 13:14:05,264] cycle_knot_detect.P<P:e47c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:05,292] cycle_knot_detect.P<P:e47c5>:OUTPUT: Total no of message: 1450
-[2019-04-24 13:14:05,841] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 683
-[2019-04-24 13:14:06,179] cycle_knot_detect.P<P:e4403>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:06,200] cycle_knot_detect.P<P:e4403>:OUTPUT: Total no of message: 1286
-[2019-04-24 13:14:06,761] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 815
-[2019-04-24 13:14:07,219] cycle_knot_detect.P<P:e4417>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:07,242] cycle_knot_detect.P<P:e4417>:OUTPUT: Total no of message: 1608
-[2019-04-24 13:14:07,820] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 644
-[2019-04-24 13:14:08,171] cycle_knot_detect.P<P:e4445>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:08,194] cycle_knot_detect.P<P:e4445>:OUTPUT: Total no of message: 1232
-[2019-04-24 13:14:08,752] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 894
-[2019-04-24 13:14:09,119] cycle_knot_detect.P<P:e4497>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:09,137] cycle_knot_detect.P<P:e4497>:OUTPUT: Total no of message: 1722
-[2019-04-24 13:14:09,736] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 815
-[2019-04-24 13:14:10,094] cycle_knot_detect.P<P:e44c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:10,118] cycle_knot_detect.P<P:e44c5>:OUTPUT: Total no of message: 1520
-[2019-04-24 13:14:10,731] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 899
-[2019-04-24 13:14:11,193] cycle_knot_detect.P<P:e44d8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:11,231] cycle_knot_detect.P<P:e44d8>:OUTPUT: Total no of message: 1734
-[2019-04-24 13:14:11,833] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 965
-[2019-04-24 13:14:12,430] cycle_knot_detect.P<P:e4517>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:12,450] cycle_knot_detect.P<P:e4517>:OUTPUT: Total no of message: 1796
-[2019-04-24 13:14:13,111] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 916
-[2019-04-24 13:14:13,553] cycle_knot_detect.P<P:e4545>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:13,575] cycle_knot_detect.P<P:e4545>:OUTPUT: Total no of message: 1832
-[2019-04-24 13:14:14,248] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1064
-[2019-04-24 13:14:14,942] cycle_knot_detect.P<P:e4597>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:14,981] cycle_knot_detect.P<P:e4597>:OUTPUT: Total no of message: 2128
-[2019-04-24 13:14:15,633] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 887
-[2019-04-24 13:14:16,024] cycle_knot_detect.P<P:e45c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:16,045] cycle_knot_detect.P<P:e45c5>:OUTPUT: Total no of message: 1774
-[2019-04-24 13:14:16,741] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1058
-[2019-04-24 13:14:17,206] cycle_knot_detect.P<P:e4603>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:17,229] cycle_knot_detect.P<P:e4603>:OUTPUT: Total no of message: 2116
-[2019-04-24 13:14:17,948] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 977
-[2019-04-24 13:14:18,379] cycle_knot_detect.P<P:e4645>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:18,402] cycle_knot_detect.P<P:e4645>:OUTPUT: Total no of message: 1836
-[2019-04-24 13:14:19,140] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1237
-[2019-04-24 13:14:19,673] cycle_knot_detect.P<P:e4658>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:19,695] cycle_knot_detect.P<P:e4658>:OUTPUT: Total no of message: 2474
-[2019-04-24 13:14:20,419] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1221
-[2019-04-24 13:14:20,959] cycle_knot_detect.P<P:e4697>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:20,982] cycle_knot_detect.P<P:e4697>:OUTPUT: Total no of message: 2442
-[2019-04-24 13:14:21,696] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1193
-[2019-04-24 13:14:22,204] cycle_knot_detect.P<P:e46c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:22,229] cycle_knot_detect.P<P:e46c5>:OUTPUT: Total no of message: 2386
-[2019-04-24 13:14:22,977] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1309
-[2019-04-24 13:14:23,632] cycle_knot_detect.P<P:e4717>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:23,659] cycle_knot_detect.P<P:e4717>:OUTPUT: Total no of message: 2598
-[2019-04-24 13:14:24,420] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1229
-[2019-04-24 13:14:24,967] cycle_knot_detect.P<P:e4745>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:24,992] cycle_knot_detect.P<P:e4745>:OUTPUT: Total no of message: 2458
-[2019-04-24 13:14:25,739] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1264
-[2019-04-24 13:14:26,285] cycle_knot_detect.P<P:e4797>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:26,311] cycle_knot_detect.P<P:e4797>:OUTPUT: Total no of message: 2394
-[2019-04-24 13:14:27,080] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1438
-[2019-04-24 13:14:27,745] cycle_knot_detect.P<P:e47c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:27,770] cycle_knot_detect.P<P:e47c5>:OUTPUT: Total no of message: 2820
-[2019-04-24 13:14:28,571] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1392
-[2019-04-24 13:14:29,152] cycle_knot_detect.P<P:e4417>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:29,181] cycle_knot_detect.P<P:e4417>:OUTPUT: Total no of message: 2770
-[2019-04-24 13:14:29,954] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1417
-[2019-04-24 13:14:30,539] cycle_knot_detect.P<P:e4445>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:30,565] cycle_knot_detect.P<P:e4445>:OUTPUT: Total no of message: 2734
-[2019-04-24 13:14:31,383] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1366
-[2019-04-24 13:14:32,040] cycle_knot_detect.P<P:e4497>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:32,066] cycle_knot_detect.P<P:e4497>:OUTPUT: Total no of message: 2732
-[2019-04-24 13:14:32,899] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1589
-[2019-04-24 13:14:33,543] cycle_knot_detect.P<P:e44c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:33,571] cycle_knot_detect.P<P:e44c5>:OUTPUT: Total no of message: 3074
-[2019-04-24 13:14:34,399] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1557
-[2019-04-24 13:14:35,110] cycle_knot_detect.P<P:e4517>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:35,147] cycle_knot_detect.P<P:e4517>:OUTPUT: Total no of message: 3046
-[2019-04-24 13:14:36,001] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1605
-[2019-04-24 13:14:36,699] cycle_knot_detect.P<P:e4545>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:36,726] cycle_knot_detect.P<P:e4545>:OUTPUT: Total no of message: 3122
-[2019-04-24 13:14:37,590] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1674
-[2019-04-24 13:14:38,322] cycle_knot_detect.P<P:e45c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:38,354] cycle_knot_detect.P<P:e45c5>:OUTPUT: Total no of message: 3342
-[2019-04-24 13:14:39,252] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1708
-[2019-04-24 13:14:40,024] cycle_knot_detect.P<P:e45d8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:40,053] cycle_knot_detect.P<P:e45d8>:OUTPUT: Total no of message: 3328
-[2019-04-24 13:14:40,947] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1676
-[2019-04-24 13:14:41,662] cycle_knot_detect.P<P:e4645>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:41,692] cycle_knot_detect.P<P:e4645>:OUTPUT: Total no of message: 3332
-[2019-04-24 13:14:42,643] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1987
-[2019-04-24 13:14:43,722] cycle_knot_detect.P<P:e4697>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:43,752] cycle_knot_detect.P<P:e4697>:OUTPUT: Total no of message: 3974
-[2019-04-24 13:14:44,667] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1997
-[2019-04-24 13:14:45,881] cycle_knot_detect.P<P:e46c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:45,918] cycle_knot_detect.P<P:e46c5>:OUTPUT: Total no of message: 3904
-[2019-04-24 13:14:46,818] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1885
-[2019-04-24 13:14:47,589] cycle_knot_detect.P<P:e4717>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:47,619] cycle_knot_detect.P<P:e4717>:OUTPUT: Total no of message: 3680
-[2019-04-24 13:14:48,551] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1862
-[2019-04-24 13:14:49,426] cycle_knot_detect.P<P:e4745>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:49,466] cycle_knot_detect.P<P:e4745>:OUTPUT: Total no of message: 3656
-[2019-04-24 13:14:50,403] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1865
-[2019-04-24 13:14:51,297] cycle_knot_detect.P<P:e47c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:51,362] cycle_knot_detect.P<P:e47c5>:OUTPUT: Total no of message: 3730
-[2019-04-24 13:14:52,290] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 1974
-[2019-04-24 13:14:54,206] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2183
-[2019-04-24 13:14:55,190] cycle_knot_detect.P<P:e4445>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:55,221] cycle_knot_detect.P<P:e4445>:OUTPUT: Total no of message: 4366
-[2019-04-24 13:14:56,215] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2244
-[2019-04-24 13:14:58,380] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2158
-[2019-04-24 13:14:59,396] cycle_knot_detect.P<P:e44d8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:14:59,438] cycle_knot_detect.P<P:e44d8>:OUTPUT: Total no of message: 4316
-[2019-04-24 13:15:00,424] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2180
-[2019-04-24 13:15:01,491] cycle_knot_detect.P<P:e4545>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:01,534] cycle_knot_detect.P<P:e4545>:OUTPUT: Total no of message: 4228
-[2019-04-24 13:15:02,559] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2270
-[2019-04-24 13:15:03,612] cycle_knot_detect.P<P:e45c5>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:03,644] cycle_knot_detect.P<P:e45c5>:OUTPUT: Total no of message: 4498
-[2019-04-24 13:15:04,645] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2443
-[2019-04-24 13:15:05,776] cycle_knot_detect.P<P:e4611>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:05,810] cycle_knot_detect.P<P:e4611>:OUTPUT: Total no of message: 4886
-[2019-04-24 13:15:06,828] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2286
-[2019-04-24 13:15:07,856] cycle_knot_detect.P<P:e4654>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:07,893] cycle_knot_detect.P<P:e4654>:OUTPUT: Total no of message: 4494
-[2019-04-24 13:15:08,926] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2583
-[2019-04-24 13:15:10,031] cycle_knot_detect.P<P:e4687>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:10,064] cycle_knot_detect.P<P:e4687>:OUTPUT: Total no of message: 5142
-[2019-04-24 13:15:11,134] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2633
-[2019-04-24 13:15:12,438] cycle_knot_detect.P<P:e46d8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:12,476] cycle_knot_detect.P<P:e46d8>:OUTPUT: Total no of message: 5266
-[2019-04-24 13:15:13,539] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2385
-[2019-04-24 13:15:15,705] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2890
-[2019-04-24 13:15:16,952] cycle_knot_detect.P<P:e4797>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:16,992] cycle_knot_detect.P<P:e4797>:OUTPUT: Total no of message: 5780
-[2019-04-24 13:15:18,118] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2793
-[2019-04-24 13:15:19,456] cycle_knot_detect.P<P:e4411>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:19,499] cycle_knot_detect.P<P:e4411>:OUTPUT: Total no of message: 5506
-[2019-04-24 13:15:20,595] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2686
-[2019-04-24 13:15:21,715] cycle_knot_detect.P<P:e4454>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:21,765] cycle_knot_detect.P<P:e4454>:OUTPUT: Total no of message: 5306
-[2019-04-24 13:15:22,885] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2979
-[2019-04-24 13:15:25,300] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2918
-[2019-04-24 13:15:26,632] cycle_knot_detect.P<P:e4545>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:26,669] cycle_knot_detect.P<P:e4545>:OUTPUT: Total no of message: 5688
-[2019-04-24 13:15:27,814] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 3234
-[2019-04-24 13:15:29,271] cycle_knot_detect.P<P:e4597>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:29,315] cycle_knot_detect.P<P:e4597>:OUTPUT: Total no of message: 6468
-[2019-04-24 13:15:30,516] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 3092
-[2019-04-24 13:15:31,900] cycle_knot_detect.P<P:e45a6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:31,944] cycle_knot_detect.P<P:e45a6>:OUTPUT: Total no of message: 6184
-[2019-04-24 13:15:33,140] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 3074
-[2019-04-24 13:15:34,513] cycle_knot_detect.P<P:e4611>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:34,554] cycle_knot_detect.P<P:e4611>:OUTPUT: Total no of message: 6148
-[2019-04-24 13:15:35,738] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 2755
-[2019-04-24 13:15:36,904] cycle_knot_detect.P<P:e466b>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:36,943] cycle_knot_detect.P<P:e466b>:OUTPUT: Total no of message: 5388
-[2019-04-24 13:15:38,139] cycle_knot_detect.Node_<Node_:9ec01>:OUTPUT: Total no of Edges: 3035
-[2019-04-24 13:15:39,477] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 13:15:39,576] cycle_knot_detect.P<P:e46d8>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:15:39,621] cycle_knot_detect.P<P:e46d8>:OUTPUT: Total no of message: 6070
-[2019-04-24 13:16:25,746] da.api<MainProcess>:INFO: <Node_:2c001> initialized at 127.0.0.1:(UdpTransport=28166, TcpTransport=16675).
-[2019-04-24 13:16:25,747] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
-[2019-04-24 13:16:25,747] da.api<MainProcess>:INFO: Running iteration 1 ...
-[2019-04-24 13:16:25,748] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
-[2019-04-24 13:16:25,878] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 10
-[2019-04-24 13:16:25,885] cycle_knot_detect.P<P:1dc09>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:25,888] cycle_knot_detect.P<P:1dc09>:OUTPUT: Total no of message: 20
-[2019-04-24 13:16:25,889] cycle_knot_detect.P<P:1dc09>:OUTPUT: Test case failed
-[2019-04-24 13:16:26,006] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 11
-[2019-04-24 13:16:26,013] cycle_knot_detect.P<P:1dc0f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:26,017] cycle_knot_detect.P<P:1dc0f>:OUTPUT: Total no of message: 22
-[2019-04-24 13:16:26,017] cycle_knot_detect.P<P:1dc0f>:OUTPUT: Test case failed
-[2019-04-24 13:16:26,269] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 20
-[2019-04-24 13:16:26,276] cycle_knot_detect.P<P:1dc29>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:26,283] cycle_knot_detect.P<P:1dc29>:OUTPUT: Total no of message: 40
-[2019-04-24 13:16:26,284] cycle_knot_detect.P<P:1dc29>:OUTPUT: Test case failed
-[2019-04-24 13:16:26,543] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 21
-[2019-04-24 13:16:26,550] cycle_knot_detect.P<P:1dc2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:26,558] cycle_knot_detect.P<P:1dc2f>:OUTPUT: Total no of message: 42
-[2019-04-24 13:16:26,558] cycle_knot_detect.P<P:1dc2f>:OUTPUT: Test case failed
-[2019-04-24 13:16:26,947] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 30
-[2019-04-24 13:16:26,960] cycle_knot_detect.P<P:1dc51>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:26,972] cycle_knot_detect.P<P:1dc51>:OUTPUT: Total no of message: 60
-[2019-04-24 13:16:26,973] cycle_knot_detect.P<P:1dc51>:OUTPUT: Test case failed
-[2019-04-24 13:16:27,352] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 31
-[2019-04-24 13:16:27,366] cycle_knot_detect.P<P:1dc66>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:27,376] cycle_knot_detect.P<P:1dc66>:OUTPUT: Total no of message: 62
-[2019-04-24 13:16:27,376] cycle_knot_detect.P<P:1dc66>:OUTPUT: Test case failed
-[2019-04-24 13:16:27,879] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 40
-[2019-04-24 13:16:27,898] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:27,913] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 80
-[2019-04-24 13:16:27,913] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:16:28,416] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 41
-[2019-04-24 13:16:28,436] cycle_knot_detect.P<P:1dcaf>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:28,454] cycle_knot_detect.P<P:1dcaf>:OUTPUT: Total no of message: 82
-[2019-04-24 13:16:28,454] cycle_knot_detect.P<P:1dcaf>:OUTPUT: Test case failed
-[2019-04-24 13:16:29,098] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 50
-[2019-04-24 13:16:29,121] cycle_knot_detect.P<P:1dce6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:29,152] cycle_knot_detect.P<P:1dce6>:OUTPUT: Total no of message: 100
-[2019-04-24 13:16:29,153] cycle_knot_detect.P<P:1dce6>:OUTPUT: Test case failed
-[2019-04-24 13:16:29,769] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 51
-[2019-04-24 13:16:29,793] cycle_knot_detect.P<P:1dd0c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:29,813] cycle_knot_detect.P<P:1dd0c>:OUTPUT: Total no of message: 102
-[2019-04-24 13:16:29,814] cycle_knot_detect.P<P:1dd0c>:OUTPUT: Test case failed
-[2019-04-24 13:16:30,582] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 60
-[2019-04-24 13:16:30,615] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:30,641] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 120
-[2019-04-24 13:16:30,641] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:16:31,381] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 61
-[2019-04-24 13:16:31,419] cycle_knot_detect.P<P:1dd8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:31,449] cycle_knot_detect.P<P:1dd8c>:OUTPUT: Total no of message: 122
-[2019-04-24 13:16:31,450] cycle_knot_detect.P<P:1dd8c>:OUTPUT: Test case failed
-[2019-04-24 13:16:32,351] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 70
-[2019-04-24 13:16:32,403] cycle_knot_detect.P<P:1ddaf>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:32,435] cycle_knot_detect.P<P:1ddaf>:OUTPUT: Total no of message: 140
-[2019-04-24 13:16:32,435] cycle_knot_detect.P<P:1ddaf>:OUTPUT: Test case failed
-[2019-04-24 13:16:33,334] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 71
-[2019-04-24 13:16:33,397] cycle_knot_detect.P<P:1de2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:33,430] cycle_knot_detect.P<P:1de2f>:OUTPUT: Total no of message: 142
-[2019-04-24 13:16:33,431] cycle_knot_detect.P<P:1de2f>:OUTPUT: Test case failed
-[2019-04-24 13:16:34,416] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 80
-[2019-04-24 13:16:34,494] cycle_knot_detect.P<P:1de66>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:34,527] cycle_knot_detect.P<P:1de66>:OUTPUT: Total no of message: 160
-[2019-04-24 13:16:34,528] cycle_knot_detect.P<P:1de66>:OUTPUT: Test case failed
-[2019-04-24 13:16:35,480] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 81
-[2019-04-24 13:16:35,531] cycle_knot_detect.P<P:1deaf>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:35,570] cycle_knot_detect.P<P:1deaf>:OUTPUT: Total no of message: 162
-[2019-04-24 13:16:35,570] cycle_knot_detect.P<P:1deaf>:OUTPUT: Test case failed
-[2019-04-24 13:16:36,683] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 90
-[2019-04-24 13:16:36,744] cycle_knot_detect.P<P:1df01>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:36,784] cycle_knot_detect.P<P:1df01>:OUTPUT: Total no of message: 180
-[2019-04-24 13:16:36,785] cycle_knot_detect.P<P:1df01>:OUTPUT: Test case failed
-[2019-04-24 13:16:37,870] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 91
-[2019-04-24 13:16:37,920] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:37,960] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 182
-[2019-04-24 13:16:37,960] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:16:39,216] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 100
-[2019-04-24 13:16:39,293] cycle_knot_detect.P<P:1df89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:39,334] cycle_knot_detect.P<P:1df89>:OUTPUT: Total no of message: 200
-[2019-04-24 13:16:39,335] cycle_knot_detect.P<P:1df89>:OUTPUT: Test case failed
-[2019-04-24 13:16:40,567] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 101
-[2019-04-24 13:16:40,663] cycle_knot_detect.P<P:1dc00>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:40,718] cycle_knot_detect.P<P:1dc00>:OUTPUT: Total no of message: 202
-[2019-04-24 13:16:40,719] cycle_knot_detect.P<P:1dc00>:OUTPUT: Test case failed
-[2019-04-24 13:16:42,066] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 110
-[2019-04-24 13:16:42,130] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:42,188] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 220
-[2019-04-24 13:16:42,189] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:16:43,566] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 111
-[2019-04-24 13:16:43,630] cycle_knot_detect.P<P:1dcce>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:43,677] cycle_knot_detect.P<P:1dcce>:OUTPUT: Total no of message: 222
-[2019-04-24 13:16:43,677] cycle_knot_detect.P<P:1dcce>:OUTPUT: Test case failed
-[2019-04-24 13:16:45,162] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 120
-[2019-04-24 13:16:45,246] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:45,295] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 240
-[2019-04-24 13:16:45,295] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:16:46,785] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 121
-[2019-04-24 13:16:46,855] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:46,904] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 242
-[2019-04-24 13:16:46,904] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:16:48,533] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 130
-[2019-04-24 13:16:48,620] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:48,679] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 260
-[2019-04-24 13:16:48,679] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:16:50,304] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 131
-[2019-04-24 13:16:50,402] cycle_knot_detect.P<P:1deb7>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:50,482] cycle_knot_detect.P<P:1deb7>:OUTPUT: Total no of message: 262
-[2019-04-24 13:16:50,483] cycle_knot_detect.P<P:1deb7>:OUTPUT: Test case failed
-[2019-04-24 13:16:52,261] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 140
-[2019-04-24 13:16:52,369] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:52,423] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 280
-[2019-04-24 13:16:52,423] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:16:54,210] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 141
-[2019-04-24 13:16:54,287] cycle_knot_detect.P<P:1dfe6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:54,340] cycle_knot_detect.P<P:1dfe6>:OUTPUT: Total no of message: 282
-[2019-04-24 13:16:54,341] cycle_knot_detect.P<P:1dfe6>:OUTPUT: Test case failed
-[2019-04-24 13:16:56,211] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 150
-[2019-04-24 13:16:56,304] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:16:56,387] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 300
-[2019-04-24 13:16:56,387] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:16:58,298] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 151
-[2019-04-24 13:16:58,396] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:16:58,470] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 302
-[2019-04-24 13:16:58,471] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:00,487] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 160
-[2019-04-24 13:17:00,593] cycle_knot_detect.P<P:1dd89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:00,654] cycle_knot_detect.P<P:1dd89>:OUTPUT: Total no of message: 320
-[2019-04-24 13:17:00,655] cycle_knot_detect.P<P:1dd89>:OUTPUT: Test case failed
-[2019-04-24 13:17:02,656] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 161
-[2019-04-24 13:17:02,780] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:02,860] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 322
-[2019-04-24 13:17:02,860] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:17:05,005] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 170
-[2019-04-24 13:17:05,114] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:05,196] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 340
-[2019-04-24 13:17:05,197] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:07,300] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 171
-[2019-04-24 13:17:07,408] cycle_knot_detect.P<P:1df89>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:07,491] cycle_knot_detect.P<P:1df89>:OUTPUT: Total no of message: 342
-[2019-04-24 13:17:07,491] cycle_knot_detect.P<P:1df89>:OUTPUT: Test case failed
-[2019-04-24 13:17:09,700] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 180
-[2019-04-24 13:17:09,801] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:09,868] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 360
-[2019-04-24 13:17:09,868] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:17:12,161] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 181
-[2019-04-24 13:17:12,326] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:12,416] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 362
-[2019-04-24 13:17:12,416] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:15,019] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 190
-[2019-04-24 13:17:15,192] cycle_knot_detect.P<P:1dd89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:15,313] cycle_knot_detect.P<P:1dd89>:OUTPUT: Total no of message: 380
-[2019-04-24 13:17:15,314] cycle_knot_detect.P<P:1dd89>:OUTPUT: Test case failed
-[2019-04-24 13:17:17,796] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 191
-[2019-04-24 13:17:17,989] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:18,090] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 382
-[2019-04-24 13:17:18,090] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:17:20,537] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 200
-[2019-04-24 13:17:20,657] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:20,740] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 400
-[2019-04-24 13:17:20,740] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:23,199] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 201
-[2019-04-24 13:17:23,329] cycle_knot_detect.P<P:1dfe6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:23,407] cycle_knot_detect.P<P:1dfe6>:OUTPUT: Total no of message: 402
-[2019-04-24 13:17:23,407] cycle_knot_detect.P<P:1dfe6>:OUTPUT: Test case failed
-[2019-04-24 13:17:26,043] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 210
-[2019-04-24 13:17:26,166] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:26,249] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 420
-[2019-04-24 13:17:26,249] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:28,926] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 211
-[2019-04-24 13:17:29,040] cycle_knot_detect.P<P:1dd89>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:29,122] cycle_knot_detect.P<P:1dd89>:OUTPUT: Total no of message: 422
-[2019-04-24 13:17:29,122] cycle_knot_detect.P<P:1dd89>:OUTPUT: Test case failed
-[2019-04-24 13:17:31,877] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 220
-[2019-04-24 13:17:31,998] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:32,083] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 440
-[2019-04-24 13:17:32,083] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:17:34,873] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 221
-[2019-04-24 13:17:34,994] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:35,077] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 442
-[2019-04-24 13:17:35,077] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:38,048] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 230
-[2019-04-24 13:17:38,179] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:38,264] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 460
-[2019-04-24 13:17:38,264] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:17:41,214] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 231
-[2019-04-24 13:17:41,346] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:41,433] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 462
-[2019-04-24 13:17:41,433] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:44,498] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 240
-[2019-04-24 13:17:44,631] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:44,718] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 480
-[2019-04-24 13:17:44,718] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:17:47,751] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 241
-[2019-04-24 13:17:47,883] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:47,969] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 482
-[2019-04-24 13:17:47,969] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:51,198] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 250
-[2019-04-24 13:17:51,328] cycle_knot_detect.P<P:1df89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:51,430] cycle_knot_detect.P<P:1df89>:OUTPUT: Total no of message: 500
-[2019-04-24 13:17:51,431] cycle_knot_detect.P<P:1df89>:OUTPUT: Test case failed
-[2019-04-24 13:17:54,618] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 251
-[2019-04-24 13:17:54,776] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:17:54,870] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 502
-[2019-04-24 13:17:54,871] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:17:58,169] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 260
-[2019-04-24 13:17:58,313] cycle_knot_detect.P<P:1dd89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:17:58,406] cycle_knot_detect.P<P:1dd89>:OUTPUT: Total no of message: 520
-[2019-04-24 13:17:58,407] cycle_knot_detect.P<P:1dd89>:OUTPUT: Test case failed
-[2019-04-24 13:18:01,715] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 261
-[2019-04-24 13:18:01,854] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:01,949] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 522
-[2019-04-24 13:18:01,950] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:05,390] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 270
-[2019-04-24 13:18:05,546] cycle_knot_detect.P<P:1df89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:05,645] cycle_knot_detect.P<P:1df89>:OUTPUT: Total no of message: 540
-[2019-04-24 13:18:05,646] cycle_knot_detect.P<P:1df89>:OUTPUT: Test case failed
-[2019-04-24 13:18:09,049] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 271
-[2019-04-24 13:18:09,203] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:09,305] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 542
-[2019-04-24 13:18:09,305] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:12,891] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 280
-[2019-04-24 13:18:13,053] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:13,166] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 560
-[2019-04-24 13:18:13,166] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:18:16,704] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 281
-[2019-04-24 13:18:16,872] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:16,982] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 562
-[2019-04-24 13:18:16,988] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:20,690] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 290
-[2019-04-24 13:18:20,852] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:20,966] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 580
-[2019-04-24 13:18:20,966] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:18:24,630] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 291
-[2019-04-24 13:18:24,796] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:24,907] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 582
-[2019-04-24 13:18:24,907] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:28,765] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 300
-[2019-04-24 13:18:29,045] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:29,407] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 600
-[2019-04-24 13:18:29,408] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:18:33,167] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 301
-[2019-04-24 13:18:33,375] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:33,502] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 602
-[2019-04-24 13:18:33,502] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:37,469] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 310
-[2019-04-24 13:18:37,651] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:37,770] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 620
-[2019-04-24 13:18:37,770] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:41,713] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 311
-[2019-04-24 13:18:41,894] cycle_knot_detect.P<P:1de8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:42,010] cycle_knot_detect.P<P:1de8c>:OUTPUT: Total no of message: 622
-[2019-04-24 13:18:42,011] cycle_knot_detect.P<P:1de8c>:OUTPUT: Test case failed
-[2019-04-24 13:18:46,117] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 320
-[2019-04-24 13:18:46,296] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:46,414] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 640
-[2019-04-24 13:18:46,414] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:50,497] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 321
-[2019-04-24 13:18:50,678] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:18:50,797] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 642
-[2019-04-24 13:18:50,797] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:18:55,086] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 330
-[2019-04-24 13:18:55,296] cycle_knot_detect.P<P:1dd89>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:18:55,415] cycle_knot_detect.P<P:1dd89>:OUTPUT: Total no of message: 660
-[2019-04-24 13:18:55,415] cycle_knot_detect.P<P:1dd89>:OUTPUT: Test case failed
-[2019-04-24 13:18:59,761] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 331
-[2019-04-24 13:18:59,942] cycle_knot_detect.P<P:1df2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:19:00,067] cycle_knot_detect.P<P:1df2f>:OUTPUT: Total no of message: 662
-[2019-04-24 13:19:00,067] cycle_knot_detect.P<P:1df2f>:OUTPUT: Test case failed
-[2019-04-24 13:19:04,523] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 340
-[2019-04-24 13:19:04,736] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:19:04,866] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 680
-[2019-04-24 13:19:04,866] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:19:09,178] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 341
-[2019-04-24 13:19:09,407] cycle_knot_detect.P<P:1dd2f>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:19:09,567] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Total no of message: 682
-[2019-04-24 13:19:09,568] cycle_knot_detect.P<P:1dd2f>:OUTPUT: Test case failed
-[2019-04-24 13:19:14,087] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 350
-[2019-04-24 13:19:14,302] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:19:14,445] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 700
-[2019-04-24 13:19:14,446] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:19:18,885] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 351
-[2019-04-24 13:19:19,083] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:19:19,215] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 702
-[2019-04-24 13:19:19,215] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:19:23,812] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 360
-[2019-04-24 13:19:24,027] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:19:24,167] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 720
-[2019-04-24 13:19:24,167] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:19:28,796] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 361
-[2019-04-24 13:19:29,004] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:19:29,143] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 722
-[2019-04-24 13:19:29,143] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:19:33,984] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 370
-[2019-04-24 13:19:34,195] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:19:34,367] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 740
-[2019-04-24 13:19:34,367] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:19:39,104] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 371
-[2019-04-24 13:19:39,316] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:19:39,459] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 742
-[2019-04-24 13:19:39,459] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:19:44,540] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 380
-[2019-04-24 13:19:44,852] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:19:45,007] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 760
-[2019-04-24 13:19:45,008] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:19:49,884] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 381
-[2019-04-24 13:19:50,090] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:19:50,242] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 762
-[2019-04-24 13:19:50,242] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:19:55,273] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 390
-[2019-04-24 13:19:55,507] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:19:55,654] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 780
-[2019-04-24 13:19:55,654] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:20:00,734] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 391
-[2019-04-24 13:20:00,971] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:20:01,119] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 782
-[2019-04-24 13:20:01,120] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:20:06,248] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 400
-[2019-04-24 13:20:06,493] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:20:06,644] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 800
-[2019-04-24 13:20:06,644] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:20:11,874] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 401
-[2019-04-24 13:20:12,093] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:20:12,240] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 802
-[2019-04-24 13:20:12,240] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:20:17,680] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 410
-[2019-04-24 13:20:17,911] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:20:18,078] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 820
-[2019-04-24 13:20:18,078] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:20:23,533] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 411
-[2019-04-24 13:20:23,763] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:20:23,916] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 822
-[2019-04-24 13:20:23,917] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:20:29,448] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 420
-[2019-04-24 13:20:29,694] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:20:29,848] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 840
-[2019-04-24 13:20:29,848] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:20:35,311] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 421
-[2019-04-24 13:20:35,556] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:20:35,940] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 842
-[2019-04-24 13:20:35,940] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:20:41,498] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 430
-[2019-04-24 13:20:41,786] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:20:41,950] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 860
-[2019-04-24 13:20:41,951] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:20:47,464] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 431
-[2019-04-24 13:20:47,725] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:20:47,888] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 862
-[2019-04-24 13:20:47,888] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:20:53,610] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 440
-[2019-04-24 13:20:53,881] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:20:54,050] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 880
-[2019-04-24 13:20:54,050] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:20:59,907] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 441
-[2019-04-24 13:21:00,391] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:21:00,632] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 882
-[2019-04-24 13:21:00,633] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:21:06,391] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 450
-[2019-04-24 13:21:06,752] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:21:07,031] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 900
-[2019-04-24 13:21:07,032] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:21:12,820] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 451
-[2019-04-24 13:21:13,139] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:21:13,345] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 902
-[2019-04-24 13:21:13,346] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:21:19,363] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 460
-[2019-04-24 13:21:19,645] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:21:19,834] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 920
-[2019-04-24 13:21:19,835] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
-[2019-04-24 13:21:25,860] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 461
-[2019-04-24 13:21:26,177] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:21:26,347] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 922
-[2019-04-24 13:21:26,348] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:21:32,382] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 470
-[2019-04-24 13:21:32,701] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:21:32,895] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 940
-[2019-04-24 13:21:32,896] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:21:39,360] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 471
-[2019-04-24 13:21:39,661] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:21:39,853] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 942
-[2019-04-24 13:21:39,854] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:21:46,304] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 480
-[2019-04-24 13:21:46,656] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:21:46,867] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 960
-[2019-04-24 13:21:46,869] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:21:53,015] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 481
-[2019-04-24 13:21:53,310] cycle_knot_detect.P<P:1df73>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:21:53,506] cycle_knot_detect.P<P:1df73>:OUTPUT: Total no of message: 962
-[2019-04-24 13:21:53,506] cycle_knot_detect.P<P:1df73>:OUTPUT: Test case failed
-[2019-04-24 13:21:59,911] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 490
-[2019-04-24 13:22:00,215] cycle_knot_detect.P<P:1dc8c>:OUTPUT: The Initiator node is inside a: cycle
-[2019-04-24 13:22:00,406] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Total no of message: 980
-[2019-04-24 13:22:00,407] cycle_knot_detect.P<P:1dc8c>:OUTPUT: Test case failed
-[2019-04-24 13:22:06,918] cycle_knot_detect.Node_<Node_:2c001>:OUTPUT: Total no of Edges: 491
-[2019-04-24 13:22:06,919] da.api<MainProcess>:INFO: Main process terminated.
-[2019-04-24 13:22:07,193] cycle_knot_detect.P<P:1dde6>:OUTPUT: The Initiator node is inside a: knot
-[2019-04-24 13:22:07,388] cycle_knot_detect.P<P:1dde6>:OUTPUT: Total no of message: 982
-[2019-04-24 13:22:07,388] cycle_knot_detect.P<P:1dde6>:OUTPUT: Test case failed
+[2019-04-24 13:40:13,698] da.api<MainProcess>:INFO: <Node_:94001> initialized at 127.0.0.1:(UdpTransport=13831, TcpTransport=13155).
+[2019-04-24 13:40:13,699] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-24 13:40:13,700] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-24 13:40:13,701] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-24 13:40:13,703] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:13,834] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 10
+[2019-04-24 13:40:13,834] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:13,840] cycle_knot_detect.P<P:98808>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:13,844] cycle_knot_detect.P<P:98808>:OUTPUT: Total no of message: 20
+[2019-04-24 13:40:13,969] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 11
+[2019-04-24 13:40:13,971] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:13,974] cycle_knot_detect.P<P:98815>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:13,979] cycle_knot_detect.P<P:98815>:OUTPUT: Total no of message: 22
+[2019-04-24 13:40:14,231] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 20
+[2019-04-24 13:40:14,231] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:14,238] cycle_knot_detect.P<P:9881e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:14,246] cycle_knot_detect.P<P:9881e>:OUTPUT: Total no of message: 40
+[2019-04-24 13:40:14,497] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 21
+[2019-04-24 13:40:14,497] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:14,504] cycle_knot_detect.P<P:98835>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:14,512] cycle_knot_detect.P<P:98835>:OUTPUT: Total no of message: 42
+[2019-04-24 13:40:14,890] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 30
+[2019-04-24 13:40:14,891] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:14,902] cycle_knot_detect.P<P:98847>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:14,913] cycle_knot_detect.P<P:98847>:OUTPUT: Total no of message: 60
+[2019-04-24 13:40:15,294] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 31
+[2019-04-24 13:40:15,296] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:15,308] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:15,319] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 62
+[2019-04-24 13:40:15,835] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 40
+[2019-04-24 13:40:15,836] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:15,851] cycle_knot_detect.P<P:98888>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:15,865] cycle_knot_detect.P<P:98888>:OUTPUT: Total no of message: 80
+[2019-04-24 13:40:16,377] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 41
+[2019-04-24 13:40:16,378] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:16,394] cycle_knot_detect.P<P:988c7>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:16,408] cycle_knot_detect.P<P:988c7>:OUTPUT: Total no of message: 82
+[2019-04-24 13:40:17,027] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 50
+[2019-04-24 13:40:17,028] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:17,049] cycle_knot_detect.P<P:988de>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:17,070] cycle_knot_detect.P<P:988de>:OUTPUT: Total no of message: 100
+[2019-04-24 13:40:17,705] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 51
+[2019-04-24 13:40:17,706] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:17,731] cycle_knot_detect.P<P:98908>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:17,750] cycle_knot_detect.P<P:98908>:OUTPUT: Total no of message: 102
+[2019-04-24 13:40:18,509] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 60
+[2019-04-24 13:40:18,510] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:18,537] cycle_knot_detect.P<P:9895e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:18,562] cycle_knot_detect.P<P:9895e>:OUTPUT: Total no of message: 120
+[2019-04-24 13:40:19,329] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 61
+[2019-04-24 13:40:19,330] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:19,362] cycle_knot_detect.P<P:98975>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:19,387] cycle_knot_detect.P<P:98975>:OUTPUT: Total no of message: 122
+[2019-04-24 13:40:20,278] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 70
+[2019-04-24 13:40:20,278] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:20,310] cycle_knot_detect.P<P:989de>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:20,339] cycle_knot_detect.P<P:989de>:OUTPUT: Total no of message: 140
+[2019-04-24 13:40:21,225] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 71
+[2019-04-24 13:40:21,225] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:21,262] cycle_knot_detect.P<P:989f5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:21,290] cycle_knot_detect.P<P:989f5>:OUTPUT: Total no of message: 142
+[2019-04-24 13:40:22,297] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 80
+[2019-04-24 13:40:22,298] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:22,343] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:22,377] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 160
+[2019-04-24 13:40:23,375] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 81
+[2019-04-24 13:40:23,376] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:23,414] cycle_knot_detect.P<P:98a88>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:23,449] cycle_knot_detect.P<P:98a88>:OUTPUT: Total no of message: 162
+[2019-04-24 13:40:24,610] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 90
+[2019-04-24 13:40:24,610] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:24,660] cycle_knot_detect.P<P:98b1a>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:24,702] cycle_knot_detect.P<P:98b1a>:OUTPUT: Total no of message: 180
+[2019-04-24 13:40:25,843] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 91
+[2019-04-24 13:40:25,843] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:25,894] cycle_knot_detect.P<P:98b71>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:25,934] cycle_knot_detect.P<P:98b71>:OUTPUT: Total no of message: 182
+[2019-04-24 13:40:27,195] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 100
+[2019-04-24 13:40:27,195] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:27,248] cycle_knot_detect.P<P:98b88>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:27,292] cycle_knot_detect.P<P:98b88>:OUTPUT: Total no of message: 200
+[2019-04-24 13:40:28,545] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 101
+[2019-04-24 13:40:28,545] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:28,605] cycle_knot_detect.P<P:98bf5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:28,651] cycle_knot_detect.P<P:98bf5>:OUTPUT: Total no of message: 202
+[2019-04-24 13:40:30,057] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 110
+[2019-04-24 13:40:30,057] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:30,120] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:30,172] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 220
+[2019-04-24 13:40:31,578] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 111
+[2019-04-24 13:40:31,581] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:31,642] cycle_knot_detect.P<P:9891a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:31,689] cycle_knot_detect.P<P:9891a>:OUTPUT: Total no of message: 222
+[2019-04-24 13:40:33,195] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 120
+[2019-04-24 13:40:33,196] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:33,290] cycle_knot_detect.P<P:98988>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:33,333] cycle_knot_detect.P<P:98988>:OUTPUT: Total no of message: 240
+[2019-04-24 13:40:34,770] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 121
+[2019-04-24 13:40:34,770] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:34,838] cycle_knot_detect.P<P:989f5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:34,888] cycle_knot_detect.P<P:989f5>:OUTPUT: Total no of message: 242
+[2019-04-24 13:40:36,539] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 130
+[2019-04-24 13:40:36,540] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:36,612] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:36,666] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 260
+[2019-04-24 13:40:38,321] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 131
+[2019-04-24 13:40:38,322] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:38,461] cycle_knot_detect.P<P:98b1a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:38,521] cycle_knot_detect.P<P:98b1a>:OUTPUT: Total no of message: 262
+[2019-04-24 13:40:40,237] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 140
+[2019-04-24 13:40:40,238] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:40,319] cycle_knot_detect.P<P:98b88>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:40,373] cycle_knot_detect.P<P:98b88>:OUTPUT: Total no of message: 280
+[2019-04-24 13:40:42,132] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 141
+[2019-04-24 13:40:42,132] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:42,220] cycle_knot_detect.P<P:98bf5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:42,276] cycle_knot_detect.P<P:98bf5>:OUTPUT: Total no of message: 282
+[2019-04-24 13:40:44,175] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 150
+[2019-04-24 13:40:44,176] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:44,261] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:44,320] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 300
+[2019-04-24 13:40:46,231] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 151
+[2019-04-24 13:40:46,232] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:46,317] cycle_knot_detect.P<P:9891a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:46,375] cycle_knot_detect.P<P:9891a>:OUTPUT: Total no of message: 302
+[2019-04-24 13:40:48,437] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 160
+[2019-04-24 13:40:48,438] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:48,530] cycle_knot_detect.P<P:989f5>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:48,596] cycle_knot_detect.P<P:989f5>:OUTPUT: Total no of message: 320
+[2019-04-24 13:40:50,626] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 161
+[2019-04-24 13:40:50,627] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:50,715] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:50,779] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 322
+[2019-04-24 13:40:52,948] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 170
+[2019-04-24 13:40:52,949] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:53,047] cycle_knot_detect.P<P:98b1a>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:53,116] cycle_knot_detect.P<P:98b1a>:OUTPUT: Total no of message: 340
+[2019-04-24 13:40:55,299] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 171
+[2019-04-24 13:40:55,299] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:40:55,407] cycle_knot_detect.P<P:98bf5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:40:55,484] cycle_knot_detect.P<P:98bf5>:OUTPUT: Total no of message: 342
+[2019-04-24 13:40:57,776] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 180
+[2019-04-24 13:40:57,777] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:40:57,879] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:40:57,951] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 360
+[2019-04-24 13:41:00,249] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 181
+[2019-04-24 13:41:00,250] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:00,356] cycle_knot_detect.P<P:9891a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:00,430] cycle_knot_detect.P<P:9891a>:OUTPUT: Total no of message: 362
+[2019-04-24 13:41:02,844] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 190
+[2019-04-24 13:41:02,845] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:02,952] cycle_knot_detect.P<P:989f5>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:03,026] cycle_knot_detect.P<P:989f5>:OUTPUT: Total no of message: 380
+[2019-04-24 13:41:05,468] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 191
+[2019-04-24 13:41:05,469] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:05,636] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:05,742] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 382
+[2019-04-24 13:41:08,294] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 200
+[2019-04-24 13:41:08,295] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:08,398] cycle_knot_detect.P<P:98b88>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:08,475] cycle_knot_detect.P<P:98b88>:OUTPUT: Total no of message: 400
+[2019-04-24 13:41:11,014] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 201
+[2019-04-24 13:41:11,015] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:11,138] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:11,214] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 402
+[2019-04-24 13:41:13,911] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 210
+[2019-04-24 13:41:13,911] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:14,031] cycle_knot_detect.P<P:9891a>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:14,112] cycle_knot_detect.P<P:9891a>:OUTPUT: Total no of message: 420
+[2019-04-24 13:41:16,816] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 211
+[2019-04-24 13:41:16,816] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:16,936] cycle_knot_detect.P<P:989f5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:17,022] cycle_knot_detect.P<P:989f5>:OUTPUT: Total no of message: 422
+[2019-04-24 13:41:19,808] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 220
+[2019-04-24 13:41:19,808] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:19,936] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:20,021] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 440
+[2019-04-24 13:41:22,820] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 221
+[2019-04-24 13:41:22,820] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:22,948] cycle_knot_detect.P<P:98b88>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:23,034] cycle_knot_detect.P<P:98b88>:OUTPUT: Total no of message: 442
+[2019-04-24 13:41:25,941] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 230
+[2019-04-24 13:41:25,942] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:26,105] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:26,195] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 460
+[2019-04-24 13:41:29,082] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 231
+[2019-04-24 13:41:29,083] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:29,227] cycle_knot_detect.P<P:98988>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:29,388] cycle_knot_detect.P<P:98988>:OUTPUT: Total no of message: 462
+[2019-04-24 13:41:32,384] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 240
+[2019-04-24 13:41:32,385] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:32,527] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:32,618] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 480
+[2019-04-24 13:41:35,668] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 241
+[2019-04-24 13:41:35,669] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:35,807] cycle_knot_detect.P<P:98b1a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:35,904] cycle_knot_detect.P<P:98b1a>:OUTPUT: Total no of message: 482
+[2019-04-24 13:41:39,123] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 250
+[2019-04-24 13:41:39,123] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:39,264] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:39,365] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 500
+[2019-04-24 13:41:42,536] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 251
+[2019-04-24 13:41:42,536] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:42,676] cycle_knot_detect.P<P:9891a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:42,775] cycle_knot_detect.P<P:9891a>:OUTPUT: Total no of message: 502
+[2019-04-24 13:41:46,071] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 260
+[2019-04-24 13:41:46,072] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:46,220] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:46,318] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 520
+[2019-04-24 13:41:49,708] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 261
+[2019-04-24 13:41:49,708] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:49,853] cycle_knot_detect.P<P:98b1a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:49,955] cycle_knot_detect.P<P:98b1a>:OUTPUT: Total no of message: 522
+[2019-04-24 13:41:53,407] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 270
+[2019-04-24 13:41:53,407] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:41:53,568] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:41:53,675] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 540
+[2019-04-24 13:41:57,072] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 271
+[2019-04-24 13:41:57,073] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:41:57,229] cycle_knot_detect.P<P:98988>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:41:57,329] cycle_knot_detect.P<P:98988>:OUTPUT: Total no of message: 542
+[2019-04-24 13:42:00,967] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 280
+[2019-04-24 13:42:00,968] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:01,120] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:01,226] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 560
+[2019-04-24 13:42:04,785] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 281
+[2019-04-24 13:42:04,786] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:04,946] cycle_knot_detect.P<P:98b88>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:05,051] cycle_knot_detect.P<P:98b88>:OUTPUT: Total no of message: 562
+[2019-04-24 13:42:08,866] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 290
+[2019-04-24 13:42:08,869] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:09,079] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:09,243] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 580
+[2019-04-24 13:42:12,926] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 291
+[2019-04-24 13:42:12,927] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:13,161] cycle_knot_detect.P<P:989f5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:13,305] cycle_knot_detect.P<P:989f5>:OUTPUT: Total no of message: 582
+[2019-04-24 13:42:17,117] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 300
+[2019-04-24 13:42:17,118] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:17,283] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:17,411] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 600
+[2019-04-24 13:42:21,300] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 301
+[2019-04-24 13:42:21,301] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:21,482] cycle_knot_detect.P<P:98bf5>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:21,599] cycle_knot_detect.P<P:98bf5>:OUTPUT: Total no of message: 602
+[2019-04-24 13:42:25,530] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 310
+[2019-04-24 13:42:25,533] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:25,724] cycle_knot_detect.P<P:9885e>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:25,845] cycle_knot_detect.P<P:9885e>:OUTPUT: Total no of message: 620
+[2019-04-24 13:42:29,764] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 311
+[2019-04-24 13:42:29,764] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:29,942] cycle_knot_detect.P<P:98a5e>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:30,074] cycle_knot_detect.P<P:98a5e>:OUTPUT: Total no of message: 622
+[2019-04-24 13:42:34,210] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 320
+[2019-04-24 13:42:34,211] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:34,394] cycle_knot_detect.P<P:98bf4>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:34,521] cycle_knot_detect.P<P:98bf4>:OUTPUT: Total no of message: 640
+[2019-04-24 13:42:38,603] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 321
+[2019-04-24 13:42:38,604] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:38,785] cycle_knot_detect.P<P:9885d>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:38,907] cycle_knot_detect.P<P:9885d>:OUTPUT: Total no of message: 642
+[2019-04-24 13:42:43,118] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 330
+[2019-04-24 13:42:43,119] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:43,298] cycle_knot_detect.P<P:98a5d>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:43,423] cycle_knot_detect.P<P:98a5d>:OUTPUT: Total no of message: 660
+[2019-04-24 13:42:47,653] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 331
+[2019-04-24 13:42:47,653] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:47,834] cycle_knot_detect.P<P:98b87>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:47,959] cycle_knot_detect.P<P:98b87>:OUTPUT: Total no of message: 662
+[2019-04-24 13:42:52,503] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 340
+[2019-04-24 13:42:52,504] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:42:52,745] cycle_knot_detect.P<P:9885d>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:42:52,908] cycle_knot_detect.P<P:9885d>:OUTPUT: Total no of message: 680
+[2019-04-24 13:42:57,171] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 341
+[2019-04-24 13:42:57,171] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:42:57,367] cycle_knot_detect.P<P:98a5d>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:42:57,503] cycle_knot_detect.P<P:98a5d>:OUTPUT: Total no of message: 682
+[2019-04-24 13:43:02,035] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 350
+[2019-04-24 13:43:02,039] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:43:02,238] cycle_knot_detect.P<P:98b87>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:43:02,375] cycle_knot_detect.P<P:98b87>:OUTPUT: Total no of message: 700
+[2019-04-24 13:43:06,895] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 351
+[2019-04-24 13:43:06,896] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:43:07,096] cycle_knot_detect.P<P:98919>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:43:07,227] cycle_knot_detect.P<P:98919>:OUTPUT: Total no of message: 702
+[2019-04-24 13:43:11,828] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 360
+[2019-04-24 13:43:11,828] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:43:12,023] cycle_knot_detect.P<P:98a5d>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:43:12,159] cycle_knot_detect.P<P:98a5d>:OUTPUT: Total no of message: 720
+[2019-04-24 13:43:16,830] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 361
+[2019-04-24 13:43:16,831] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:43:17,029] cycle_knot_detect.P<P:98b87>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:43:17,165] cycle_knot_detect.P<P:98b87>:OUTPUT: Total no of message: 722
+[2019-04-24 13:43:21,927] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 370
+[2019-04-24 13:43:21,927] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:43:22,140] cycle_knot_detect.P<P:98919>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:43:22,281] cycle_knot_detect.P<P:98919>:OUTPUT: Total no of message: 740
+[2019-04-24 13:43:27,206] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 371
+[2019-04-24 13:43:27,279] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:43:27,485] cycle_knot_detect.P<P:98a5d>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:43:27,671] cycle_knot_detect.P<P:98a5d>:OUTPUT: Total no of message: 742
+[2019-04-24 13:43:32,545] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 380
+[2019-04-24 13:43:32,546] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:43:32,757] cycle_knot_detect.P<P:98b87>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:43:32,900] cycle_knot_detect.P<P:98b87>:OUTPUT: Total no of message: 760
+[2019-04-24 13:43:38,096] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 381
+[2019-04-24 13:43:38,096] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:43:38,330] cycle_knot_detect.P<P:98919>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:43:38,484] cycle_knot_detect.P<P:98919>:OUTPUT: Total no of message: 762
+[2019-04-24 13:43:43,492] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 390
+[2019-04-24 13:43:43,493] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:43:43,713] cycle_knot_detect.P<P:98a5d>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:43:43,858] cycle_knot_detect.P<P:98a5d>:OUTPUT: Total no of message: 780
+[2019-04-24 13:43:48,908] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 391
+[2019-04-24 13:43:48,908] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:43:49,132] cycle_knot_detect.P<P:98b87>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:43:49,292] cycle_knot_detect.P<P:98b87>:OUTPUT: Total no of message: 782
+[2019-04-24 13:43:54,417] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 400
+[2019-04-24 13:43:54,418] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a knot
+[2019-04-24 13:43:54,652] cycle_knot_detect.P<P:98a5d>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-24 13:43:54,803] cycle_knot_detect.P<P:98a5d>:OUTPUT: Total no of message: 800
+[2019-04-24 13:43:59,962] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: Total no of Edges: 401
+[2019-04-24 13:43:59,962] cycle_knot_detect.Node_<Node_:94001>:OUTPUT: creating a cycle
+[2019-04-24 13:44:00,187] cycle_knot_detect.P<P:98b87>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:44:00,341] cycle_knot_detect.P<P:98b87>:OUTPUT: Total no of message: 802
+[2019-04-24 13:56:27,241] da.api<MainProcess>:WARNING: Received keyboard interrupt. 
+[2019-04-24 13:56:49,733] da.api<MainProcess>:INFO: <Node_:52c01> initialized at 127.0.0.1:(UdpTransport=15771, TcpTransport=10791).
+[2019-04-24 13:56:49,734] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-24 13:56:49,734] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-24 13:56:49,735] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-24 13:56:49,813] cycle_knot_detect.P<P:55402>:ERROR: Exception during setup((126100949914615810, ([<P:55406>], 1, [<P:55402>, <P:55406>, <P:55404>, <P:55405>, <P:55403>, <P:55407>], 5))): TypeError("setup() missing 3 required positional arguments: 'initiator', 'no_of_edges', and 'node_type'",)
+[2019-04-24 13:56:49,815] cycle_knot_detect.P<P:55406>:ERROR: Exception during setup((126100949914615811, ([<P:55404>, <P:55407>], 2, [<P:55402>, <P:55406>, <P:55404>, <P:55405>, <P:55403>, <P:55407>], 5))): TypeError("setup() missing 3 required positional arguments: 'initiator', 'no_of_edges', and 'node_type'",)
+[2019-04-24 13:56:49,815] cycle_knot_detect.P<P:55404>:ERROR: Exception during setup((126100949914615812, ([<P:55405>], 3, [<P:55402>, <P:55406>, <P:55404>, <P:55405>, <P:55403>, <P:55407>], 5))): TypeError("setup() missing 3 required positional arguments: 'initiator', 'no_of_edges', and 'node_type'",)
+[2019-04-24 13:56:49,816] cycle_knot_detect.P<P:55405>:ERROR: Exception during setup((126100949914615813, ([<P:55403>], 4, [<P:55402>, <P:55406>, <P:55404>, <P:55405>, <P:55403>, <P:55407>], 5))): TypeError("setup() missing 3 required positional arguments: 'initiator', 'no_of_edges', and 'node_type'",)
+[2019-04-24 13:56:49,817] cycle_knot_detect.P<P:55403>:ERROR: Exception during setup((126100949914615814, ([<P:55402>], 5, [<P:55402>, <P:55406>, <P:55404>, <P:55405>, <P:55403>, <P:55407>], 5))): TypeError("setup() missing 3 required positional arguments: 'initiator', 'no_of_edges', and 'node_type'",)
+[2019-04-24 13:56:49,817] cycle_knot_detect.P<P:55407>:ERROR: Exception during setup((126100949914615815, ([<P:55402>], 6, [<P:55402>, <P:55406>, <P:55404>, <P:55405>, <P:55403>, <P:55407>], 5))): TypeError("setup() missing 3 required positional arguments: 'initiator', 'no_of_edges', and 'node_type'",)
+[2019-04-24 13:56:49,818] cycle_knot_detect.P<P:55402>:ERROR: `start` received before `setup`!
+[2019-04-24 13:56:49,818] cycle_knot_detect.P<P:55404>:ERROR: `start` received before `setup`!
+[2019-04-24 13:56:49,818] cycle_knot_detect.P<P:55405>:ERROR: `start` received before `setup`!
+[2019-04-24 13:56:49,818] cycle_knot_detect.P<P:55403>:ERROR: `start` received before `setup`!
+[2019-04-24 13:56:49,818] cycle_knot_detect.P<P:55407>:ERROR: `start` received before `setup`!
+[2019-04-24 13:56:49,818] cycle_knot_detect.P<P:55406>:ERROR: `start` received before `setup`!
+[2019-04-24 13:56:49,947] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 41
+[2019-04-24 13:56:49,971] cycle_knot_detect.P<P:5540b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:49,974] cycle_knot_detect.P<P:5540b>:OUTPUT: Total no of message: 66
+[2019-04-24 13:56:50,108] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 53
+[2019-04-24 13:56:50,152] cycle_knot_detect.P<P:55419>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:50,158] cycle_knot_detect.P<P:55419>:OUTPUT: Total no of message: 106
+[2019-04-24 13:56:50,298] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 56
+[2019-04-24 13:56:50,328] cycle_knot_detect.P<P:55422>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:50,332] cycle_knot_detect.P<P:55422>:OUTPUT: Total no of message: 104
+[2019-04-24 13:56:50,493] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 70
+[2019-04-24 13:56:50,532] cycle_knot_detect.P<P:5542b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:50,538] cycle_knot_detect.P<P:5542b>:OUTPUT: Total no of message: 140
+[2019-04-24 13:56:50,709] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 66
+[2019-04-24 13:56:50,762] cycle_knot_detect.P<P:55442>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:50,768] cycle_knot_detect.P<P:55442>:OUTPUT: Total no of message: 124
+[2019-04-24 13:56:50,953] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 72
+[2019-04-24 13:56:50,993] cycle_knot_detect.P<P:5544b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:50,998] cycle_knot_detect.P<P:5544b>:OUTPUT: Total no of message: 144
+[2019-04-24 13:56:51,207] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 107
+[2019-04-24 13:56:51,256] cycle_knot_detect.P<P:55462>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:51,262] cycle_knot_detect.P<P:55462>:OUTPUT: Total no of message: 186
+[2019-04-24 13:56:51,468] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 116
+[2019-04-24 13:56:51,591] cycle_knot_detect.P<P:5546b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:51,601] cycle_knot_detect.P<P:5546b>:OUTPUT: Total no of message: 232
+[2019-04-24 13:56:51,805] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 115
+[2019-04-24 13:56:51,865] cycle_knot_detect.P<P:55482>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:51,871] cycle_knot_detect.P<P:55482>:OUTPUT: Total no of message: 224
+[2019-04-24 13:56:52,094] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 154
+[2019-04-24 13:56:52,175] cycle_knot_detect.P<P:5548b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:52,182] cycle_knot_detect.P<P:5548b>:OUTPUT: Total no of message: 308
+[2019-04-24 13:56:52,421] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 146
+[2019-04-24 13:56:52,494] cycle_knot_detect.P<P:554a2>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:52,506] cycle_knot_detect.P<P:554a2>:OUTPUT: Total no of message: 282
+[2019-04-24 13:56:52,757] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 158
+[2019-04-24 13:56:52,830] cycle_knot_detect.P<P:554b0>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:52,839] cycle_knot_detect.P<P:554b0>:OUTPUT: Total no of message: 288
+[2019-04-24 13:56:53,099] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 165
+[2019-04-24 13:56:53,182] cycle_knot_detect.P<P:554c4>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:53,191] cycle_knot_detect.P<P:554c4>:OUTPUT: Total no of message: 316
+[2019-04-24 13:56:53,473] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 189
+[2019-04-24 13:56:53,560] cycle_knot_detect.P<P:554e2>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:53,568] cycle_knot_detect.P<P:554e2>:OUTPUT: Total no of message: 336
+[2019-04-24 13:56:53,860] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 205
+[2019-04-24 13:56:53,955] cycle_knot_detect.P<P:554fc>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:53,964] cycle_knot_detect.P<P:554fc>:OUTPUT: Total no of message: 372
+[2019-04-24 13:56:54,266] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 232
+[2019-04-24 13:56:54,397] cycle_knot_detect.P<P:5550a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:54,418] cycle_knot_detect.P<P:5550a>:OUTPUT: Total no of message: 464
+[2019-04-24 13:56:54,738] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 250
+[2019-04-24 13:56:54,854] cycle_knot_detect.P<P:5552b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:54,863] cycle_knot_detect.P<P:5552b>:OUTPUT: Total no of message: 500
+[2019-04-24 13:56:55,188] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 303
+[2019-04-24 13:56:55,330] cycle_knot_detect.P<P:55544>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:55,339] cycle_knot_detect.P<P:55544>:OUTPUT: Total no of message: 606
+[2019-04-24 13:56:55,670] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 257
+[2019-04-24 13:56:55,791] cycle_knot_detect.P<P:55562>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:55,801] cycle_knot_detect.P<P:55562>:OUTPUT: Total no of message: 514
+[2019-04-24 13:56:56,147] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 294
+[2019-04-24 13:56:56,295] cycle_knot_detect.P<P:5557c>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:56,306] cycle_knot_detect.P<P:5557c>:OUTPUT: Total no of message: 588
+[2019-04-24 13:56:56,658] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 367
+[2019-04-24 13:56:56,823] cycle_knot_detect.P<P:555ab>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:56,833] cycle_knot_detect.P<P:555ab>:OUTPUT: Total no of message: 734
+[2019-04-24 13:56:57,211] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 306
+[2019-04-24 13:56:57,336] cycle_knot_detect.P<P:555b0>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:57,349] cycle_knot_detect.P<P:555b0>:OUTPUT: Total no of message: 544
+[2019-04-24 13:56:57,738] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 373
+[2019-04-24 13:56:57,923] cycle_knot_detect.P<P:555e2>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:57,935] cycle_knot_detect.P<P:555e2>:OUTPUT: Total no of message: 686
+[2019-04-24 13:56:58,332] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 377
+[2019-04-24 13:56:58,504] cycle_knot_detect.P<P:555fc>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:58,515] cycle_knot_detect.P<P:555fc>:OUTPUT: Total no of message: 754
+[2019-04-24 13:56:58,938] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 415
+[2019-04-24 13:56:59,123] cycle_knot_detect.P<P:5562b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:59,135] cycle_knot_detect.P<P:5562b>:OUTPUT: Total no of message: 830
+[2019-04-24 13:56:59,556] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 444
+[2019-04-24 13:56:59,757] cycle_knot_detect.P<P:55630>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:56:59,774] cycle_knot_detect.P<P:55630>:OUTPUT: Total no of message: 888
+[2019-04-24 13:57:00,199] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 444
+[2019-04-24 13:57:00,395] cycle_knot_detect.P<P:55662>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:00,408] cycle_knot_detect.P<P:55662>:OUTPUT: Total no of message: 888
+[2019-04-24 13:57:00,860] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 439
+[2019-04-24 13:57:01,048] cycle_knot_detect.P<P:5567c>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:01,062] cycle_knot_detect.P<P:5567c>:OUTPUT: Total no of message: 848
+[2019-04-24 13:57:01,515] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 475
+[2019-04-24 13:57:01,714] cycle_knot_detect.P<P:556ab>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:01,727] cycle_knot_detect.P<P:556ab>:OUTPUT: Total no of message: 926
+[2019-04-24 13:57:02,199] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 515
+[2019-04-24 13:57:02,437] cycle_knot_detect.P<P:556e2>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:02,453] cycle_knot_detect.P<P:556e2>:OUTPUT: Total no of message: 998
+[2019-04-24 13:57:02,931] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 519
+[2019-04-24 13:57:03,136] cycle_knot_detect.P<P:556fc>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:03,150] cycle_knot_detect.P<P:556fc>:OUTPUT: Total no of message: 946
+[2019-04-24 13:57:03,653] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 559
+[2019-04-24 13:57:03,891] cycle_knot_detect.P<P:5572b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:03,907] cycle_knot_detect.P<P:5572b>:OUTPUT: Total no of message: 1118
+[2019-04-24 13:57:04,426] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 663
+[2019-04-24 13:57:04,687] cycle_knot_detect.P<P:55759>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:04,702] cycle_knot_detect.P<P:55759>:OUTPUT: Total no of message: 1284
+[2019-04-24 13:57:05,212] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 660
+[2019-04-24 13:57:05,498] cycle_knot_detect.P<P:55762>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:05,514] cycle_knot_detect.P<P:55762>:OUTPUT: Total no of message: 1320
+[2019-04-24 13:57:06,053] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 627
+[2019-04-24 13:57:06,407] cycle_knot_detect.P<P:557ab>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:06,426] cycle_knot_detect.P<P:557ab>:OUTPUT: Total no of message: 1254
+[2019-04-24 13:57:06,983] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 646
+[2019-04-24 13:57:07,343] cycle_knot_detect.P<P:557e2>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:07,362] cycle_knot_detect.P<P:557e2>:OUTPUT: Total no of message: 1292
+[2019-04-24 13:57:07,921] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 772
+[2019-04-24 13:57:08,240] cycle_knot_detect.P<P:557fc>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:08,259] cycle_knot_detect.P<P:557fc>:OUTPUT: Total no of message: 1544
+[2019-04-24 13:57:08,849] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 842
+[2019-04-24 13:57:09,199] cycle_knot_detect.P<P:5542b>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:09,217] cycle_knot_detect.P<P:5542b>:OUTPUT: Total no of message: 1684
+[2019-04-24 13:57:09,817] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 747
+[2019-04-24 13:57:10,173] cycle_knot_detect.P<P:55462>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:10,194] cycle_knot_detect.P<P:55462>:OUTPUT: Total no of message: 1494
+[2019-04-24 13:57:10,784] cycle_knot_detect.Node_<Node_:52c01>:OUTPUT: Total no of Edges: 912
+[2019-04-24 13:57:11,111] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-24 13:57:11,150] cycle_knot_detect.P<P:5547c>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-24 13:57:11,168] cycle_knot_detect.P<P:5547c>:OUTPUT: Total no of message: 1824

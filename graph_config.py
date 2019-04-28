@@ -2,6 +2,7 @@
 network1 = dict(
     # Records the total number of nodes in the system
     total_nodes = 6,
+    no_of_edges = 7,
     initiator =5,
     # The graph edges in the network
     node1 = [2],
@@ -15,6 +16,7 @@ network1 = dict(
 network2 = dict(
     # Records the total number of nodes in the system
     total_nodes = 8,
+    no_of_edges = 10,
     initiator =3,
     # The graph edges in the network
     node1 = [2],
@@ -31,6 +33,8 @@ network3 = dict(
     # Records the total number of nodes in the system
     total_nodes = 6,
     initiator =4,
+    no_of_edges = 8,
+
     # The graph edges in the network
     node1 = [4],
     node2 = [3],
@@ -44,6 +48,8 @@ network4 = dict(
     # Records the total number of nodes in the system
     total_nodes = 10,
     initiator =1,
+    no_of_edges = 10,
+
     # The graph edges in the network
     node1 = [2],
     node2 = [3],
@@ -61,6 +67,8 @@ network5 = dict(
     # Records the total number of nodes in the system
     total_nodes = 10,
     initiator =1,
+    no_of_edges = 11,
+
     # The graph edges in the network
     node1 = [2],
     node2 = [3],

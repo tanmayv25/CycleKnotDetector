@@ -3,10 +3,10 @@ import da
 PatternExpr_307 = da.pat.TuplePattern([da.pat.ConstantPattern('Request'), da.pat.FreePattern('sender')])
 PatternExpr_428 = da.pat.TuplePattern([da.pat.ConstantPattern('message_count'), da.pat.FreePattern('message_count')])
 PatternExpr_451 = da.pat.TuplePattern([da.pat.ConstantPattern('Reply'), da.pat.FreePattern('type'), da.pat.FreePattern('sender'), da.pat.FreePattern('S')])
-PatternExpr_949 = da.pat.ConstantPattern('Terminate')
-PatternExpr_973 = da.pat.ConstantPattern('Terminate_initiator')
-PatternExpr_953 = da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.FreePattern(None), da.pat.FreePattern(None)]), da.pat.ConstantPattern('Terminate')])
-PatternExpr_977 = da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.FreePattern(None), da.pat.FreePattern(None)]), da.pat.ConstantPattern('Terminate_initiator')])
+PatternExpr_953 = da.pat.ConstantPattern('Terminate')
+PatternExpr_977 = da.pat.ConstantPattern('Terminate_initiator')
+PatternExpr_957 = da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.FreePattern(None), da.pat.FreePattern(None)]), da.pat.ConstantPattern('Terminate')])
+PatternExpr_981 = da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.TuplePattern([da.pat.FreePattern(None), da.pat.FreePattern(None), da.pat.FreePattern(None)]), da.pat.ConstantPattern('Terminate_initiator')])
 _config_object = {}
 import sys
 import graph_config
@@ -18,10 +18,10 @@ class P(da.DistProcess):
         super().__init__(procimpl, props)
         self._PReceivedEvent_3 = []
         self._PReceivedEvent_4 = []
-        self._events.extend([da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_0', PatternExpr_307, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_306]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_1', PatternExpr_428, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_427]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_2', PatternExpr_451, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_450]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_3', PatternExpr_949, sources=None, destinations=None, timestamps=None, record_history=True, handlers=[]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_4', PatternExpr_973, sources=None, destinations=None, timestamps=None, record_history=True, handlers=[])])
+        self._events.extend([da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_0', PatternExpr_307, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_306]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_1', PatternExpr_428, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_427]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_2', PatternExpr_451, sources=None, destinations=None, timestamps=None, record_history=None, handlers=[self._P_handler_450]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_3', PatternExpr_953, sources=None, destinations=None, timestamps=None, record_history=True, handlers=[]), da.pat.EventPattern(da.pat.ReceivedEvent, '_PReceivedEvent_4', PatternExpr_977, sources=None, destinations=None, timestamps=None, record_history=True, handlers=[])])
 
-    def setup(self, successors, own_id, all_processors, initiator_id, initiator, no_of_edges, node_type, **rest_1373):
-        super().setup(successors=successors, own_id=own_id, all_processors=all_processors, initiator_id=initiator_id, initiator=initiator, no_of_edges=no_of_edges, node_type=node_type, **rest_1373)
+    def setup(self, successors, own_id, all_processors, initiator_id, initiator, no_of_edges, node_type, **rest_1388):
+        super().setup(successors=successors, own_id=own_id, all_processors=all_processors, initiator_id=initiator_id, initiator=initiator, no_of_edges=no_of_edges, node_type=node_type, **rest_1388)
         self._state.successors = successors
         self._state.own_id = own_id
         self._state.all_processors = all_processors
@@ -47,29 +47,29 @@ class P(da.DistProcess):
 
     def run(self):
         self.initiate()
-        super()._label('_st_label_946', block=False)
-        _st_label_946 = 0
-        while (_st_label_946 == 0):
-            _st_label_946 += 1
-            if PatternExpr_953.match_iter(self._PReceivedEvent_3, SELF_ID=self._id):
-                _st_label_946 += 1
+        super()._label('_st_label_950', block=False)
+        _st_label_950 = 0
+        while (_st_label_950 == 0):
+            _st_label_950 += 1
+            if PatternExpr_957.match_iter(self._PReceivedEvent_3, SELF_ID=self._id):
+                _st_label_950 += 1
             else:
-                super()._label('_st_label_946', block=True)
-                _st_label_946 -= 1
+                super()._label('_st_label_950', block=True)
+                _st_label_950 -= 1
         if (self._state.own_id == self._state.initiator_id):
             self._state.total_message_count += self._state.message_count
-            super()._label('_st_label_970', block=False)
-            _st_label_970 = 0
-            while (_st_label_970 == 0):
-                _st_label_970 += 1
-                if PatternExpr_977.match_iter(self._PReceivedEvent_4, SELF_ID=self._id):
-                    _st_label_970 += 1
+            super()._label('_st_label_974', block=False)
+            _st_label_974 = 0
+            while (_st_label_974 == 0):
+                _st_label_974 += 1
+                if PatternExpr_981.match_iter(self._PReceivedEvent_4, SELF_ID=self._id):
+                    _st_label_974 += 1
                 else:
-                    super()._label('_st_label_970', block=True)
-                    _st_label_970 -= 1
+                    super()._label('_st_label_974', block=True)
+                    _st_label_974 -= 1
             self.output('Total no of message:', self._state.total_message_count)
             if (self._state.total_message_count > (2 * self._state.no_of_edges)):
-                self.output('Test case failed')
+                self.output('Message complexity test case failed !!!')
         else:
             self.send(('message_count', self._state.message_count), to=self._state.initiator)
 
@@ -168,7 +168,7 @@ class P(da.DistProcess):
                     self._state.result = 'Neither Cycle nor Knot'
                 self.output('The Initiator node is inside a:', self._state.result)
                 if ((not (self._state.node_type == 'Unknown')) and (not (self._state.node_type == self._state.result))):
-                    self.output('Function Testing failed!!!')
+                    self.output('Function Testing failed!!! Algorithm identified node in', self._state.result, 'which was originally', self._state.node_type, sep=' ')
                 self.send('Terminate', to=self._state.all_processors)
             else:
                 self._state.replies_received[type] = 1
@@ -231,8 +231,12 @@ class Node_(da.NodeProcess):
         def Functional_testing_with_rings_and_knots():
             for n in range(10, 500, 10):
                 for node_type in ['cycle', 'knot']:
+                    self.output('creating a', node_type)
+                    if (node_type == 'cycle'):
+                        no_of_edges = n
+                    else:
+                        no_of_edges = (n + 1)
                     ps = list(self.new(P, num=n))
-                    no_of_edges = 0
                     for (i, p) in enumerate(ps):
                         if (node_type == 'cycle'):
                             successors = [ps[((i + 1) if (i < (len(ps) - 1)) else 0)]]
@@ -243,13 +247,12 @@ class Node_(da.NodeProcess):
                                 successors = [ps[0]]
                             else:
                                 successors = [ps[((i + 1) if (i < (len(ps) - 1)) else 0)]]
-                        no_of_edges += len(successors)
                         self._setup({p}, (successors, (i + 1), ps, 1, ps[0], no_of_edges, node_type))
                     self._start(ps)
                     self.output('Total no of Edges:', no_of_edges)
 
         def scalability_testing_random_graphs():
-            for N in range(10, 100):
+            for N in range(10, 50):
                 ps = list(self.new(P, num=N))
                 initiator_id = 1
                 (graph, no_of_edges) = create_graph(N)
@@ -266,4 +269,5 @@ class Node_(da.NodeProcess):
                 successors = [ps[(i - 1)] for i in graph_config.test[('node' + str((i + 1)))]]
                 self._setup({p}, (successors, (i + 1), ps, graph_config.test['initiator']))
             self._start(ps)
-        Functional_testing_with_rings_and_knots()
+        Manual_testing()
+        scalability_testing_random_graphs()
