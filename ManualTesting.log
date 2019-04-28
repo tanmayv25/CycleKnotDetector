@@ -1,0 +1,35 @@
+[2019-04-28 08:25:04,597] da.api<MainProcess>:INFO: <Node_:19401> initialized at 127.0.0.1:(UdpTransport=23666, TcpTransport=25158).
+[2019-04-28 08:25:04,597] da.api<MainProcess>:INFO: Starting program <module 'cycle_knot_detect' from '/Users/mohammedhabibullahbaig/Desktop/Distributed systems/Project/CycleKnotDetector/cycle_knot_detect.py'>...
+[2019-04-28 08:25:04,598] da.api<MainProcess>:INFO: Running iteration 1 ...
+[2019-04-28 08:25:04,600] da.api<MainProcess>:INFO: Waiting for remaining child processes to terminate...(Press "Ctrl-C" to force kill)
+[2019-04-28 08:25:04,687] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Starting Algorithm for test case:  1
+[2019-04-28 08:25:04,690] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total Simulation Time: 0.003208160400390625
+[2019-04-28 08:25:04,691] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total no of Edges: 7
+[2019-04-28 08:25:04,694] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Ending Algorithm for test case:  1
+[2019-04-28 08:25:04,702] cycle_knot_detect.P<P:07c03>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-28 08:25:04,710] cycle_knot_detect.P<P:07c03>:OUTPUT: Total no of message: 14
+[2019-04-28 08:25:04,809] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Starting Algorithm for test case:  2
+[2019-04-28 08:25:04,814] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total Simulation Time: 0.004734039306640625
+[2019-04-28 08:25:04,815] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total no of Edges: 10
+[2019-04-28 08:25:04,815] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Ending Algorithm for test case:  2
+[2019-04-28 08:25:04,819] cycle_knot_detect.P<P:07c0a>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-28 08:25:04,825] cycle_knot_detect.P<P:07c0a>:OUTPUT: Total no of message: 12
+[2019-04-28 08:25:04,904] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Starting Algorithm for test case:  3
+[2019-04-28 08:25:04,907] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total Simulation Time: 0.0030870437622070312
+[2019-04-28 08:25:04,908] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total no of Edges: 8
+[2019-04-28 08:25:04,910] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Ending Algorithm for test case:  3
+[2019-04-28 08:25:04,914] cycle_knot_detect.P<P:07c12>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-28 08:25:04,919] cycle_knot_detect.P<P:07c12>:OUTPUT: Total no of message: 14
+[2019-04-28 08:25:05,057] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Starting Algorithm for test case:  4
+[2019-04-28 08:25:05,065] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total Simulation Time: 0.008111238479614258
+[2019-04-28 08:25:05,067] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total no of Edges: 10
+[2019-04-28 08:25:05,068] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Ending Algorithm for test case:  4
+[2019-04-28 08:25:05,072] cycle_knot_detect.P<P:07c1a>:OUTPUT: The Initiator node is inside a: cycle
+[2019-04-28 08:25:05,079] cycle_knot_detect.P<P:07c1a>:OUTPUT: Total no of message: 20
+[2019-04-28 08:25:05,209] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Starting Algorithm for test case:  5
+[2019-04-28 08:25:05,218] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total Simulation Time: 0.008546113967895508
+[2019-04-28 08:25:05,220] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Total no of Edges: 11
+[2019-04-28 08:25:05,221] cycle_knot_detect.Node_<Node_:19401>:OUTPUT: Ending Algorithm for test case:  5
+[2019-04-28 08:25:05,222] da.api<MainProcess>:INFO: Main process terminated.
+[2019-04-28 08:25:05,225] cycle_knot_detect.P<P:07c20>:OUTPUT: The Initiator node is inside a: knot
+[2019-04-28 08:25:05,232] cycle_knot_detect.P<P:07c20>:OUTPUT: Total no of message: 22

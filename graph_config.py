@@ -81,4 +81,3 @@ network5 = dict(
     node9 = [1],
     node10 = [9]
 )
-test = network1

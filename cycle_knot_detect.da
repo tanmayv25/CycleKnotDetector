@@ -1,6 +1,7 @@
 import sys
 import graph_config
 import random
+import time
 
 class P(process):
     def setup(successors:set, own_id:int, all_processors:set, initiator_id:int, initiator:P, no_of_edges:int, node_type:string):
@@ -179,8 +180,11 @@ class P(process):
             output('Total no of message:', total_message_count)
             if total_message_count > 2*no_of_edges :
                 output('Message complexity test case failed !!!')
+            send(('Terminate_all'), to=all_processors)
         else:
             send(('message_count', message_count), to=initiator)
+            await(received(('Terminate_all')))
+        #send(('done' ), to=nodeof(self))
         #output('Done!!!')
 
 # Alternative main block for scalability experiments
@@ -189,7 +193,7 @@ def create_graph(n):
     no_of_edges=0
     successors=[1]*n
     for i in range(n):
-        k=random.randint(5,n)
+        k=random.randint(3,n)
         S=set()
         for j in range(1,k):
             l=random.randint(1,k)
@@ -202,14 +206,14 @@ def create_graph(n):
 def main():
     config(channel="fifo")
     def Functional_testing_with_rings_and_knots():
-        for n in range(10,500,10):
+        count = 0
+        for n in range(10,300,10):
+            count +=1
             for node_type in ['cycle','knot']:
-                output('creating a', node_type)
                 if node_type == 'cycle':
                     no_of_edges=n
                 else:
                     no_of_edges=n+1
-
                 ps = list(new(P, num=n))
                 for i, p in enumerate(ps):
                     if node_type == 'cycle':
@@ -222,31 +226,60 @@ def main():
                         else:
                             successors = [ps[(i+1 if i < (len(ps)-1) else 0)]]
                     setup({p}, (successors,i+1,ps,1,ps[0],no_of_edges,node_type))
+                t0 = time.time()
+                output('Starting Algorithm for test case: ', count)
                 start(ps)
+                t1 = time.time()
+                output('Type: ', node_type)
+                output('Number of nodes: ', n)
+                output('Total Simulation Time:', t1-t0)
                 output('Total no of Edges:', no_of_edges)
+                output('Ending Algorithm for test case: ', count)
 
     def scalability_testing_random_graphs():
-        for N in range(10,50):
+        count = 0
+        for N in range(10,70,5):
+            count+=1
             ps = list(new(P, num=N))
             initiator_id=1
             graph, no_of_edges=create_graph(N)
-            output('Total no of Edges:', no_of_edges)
-            #output(graph)
 
+            #output(graph)
             for i, p in enumerate(ps):
                 successors = [ps[i - 1] for i in graph[i]]
                 setup({p}, (successors,i+1,ps,1,ps[0],no_of_edges,'Unknown'))
+            t0 = time.time()
+            output('Starting Algorithm for test case: ', count)
             start(ps)
 
+            t1 = time.time()
+            output('Total Simulation Time:', t1-t0)
+            output('Number of nodes: ', N)
+            output('Total no of Edges:', no_of_edges)
+            output('Ending Algorithm for test case: ', count)
+            time.sleep(count)
+
     def Manual_testing():
-        n = graph_config.test['total_nodes']
-        ps = list(new(P, num= n))
+        tests = [graph_config.network1, graph_config.network2, graph_config.network3, graph_config.network4, graph_config.network5]
+        count = 0
+        for test in tests:
+            count+=1
+            n = test['total_nodes']
+            ps = list(new(P, num= n))
+            initiator=ps[test['initiator']-1]
+            for i, p in enumerate(ps):
+                successors = [ps[i - 1] for i in test['node'+str(i+1)]]
+                setup({p}, (successors,i+1,ps,test['initiator'],initiator, test['no_of_edges'],'Unknown'))
 
-        for i, p in enumerate(ps):
-            successors = [ps[i - 1] for i in graph_config.test['node'+str(i+1)]]
-            setup({p}, (successors,i+1,ps,graph_config.test['initiator'],graph_config.test['no_of_edges'],'Unknown'))
-        start(ps)
+            t0 = time.time()
+            output('Starting Algorithm for test case: ', count)
+            start(ps)
+            t1 = time.time()
+            output('Total Simulation Time:', t1-t0)
+            output('Total no of Edges:', test['no_of_edges'])
+            output('Ending Algorithm for test case: ', count)
 
-    Manual_testing()
-    #scalability_testing_random_graphs()
+    #Manual_testing()
+    scalability_testing_random_graphs()
+    time.sleep(100)
     #Functional_testing_with_rings_and_knots()
